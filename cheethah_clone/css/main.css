@@ -119,6 +119,17 @@ body {
   margin-bottom: 30px;
 }
 
+.chitah-main-swiper-section .chitah-main-swiper .chitah-main-slide-logo {
+  display: block;
+  color: #ffffff;
+  width: 450px;
+  /*transform: translateY(100px);
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 1s; */
+  filter: invert(100%);
+}
+
 .chitah-main-swiper-section .chitah-main-swiper .chitah-main-slide-title {
   font-size: 72px;
   color: #ffffff;
@@ -127,6 +138,16 @@ body {
   /* transform: translateY(100px); */
   /* transition: 1s;
   transition-delay: 1s; */
+}
+
+.chitah-main-swiper-section .chitah-main-left-wrap .chitah-main-navi-wrap {
+  /*prev, next 역할을 하는 버튼 위치를 맞춰주는 css
+  */
+  position: relative;
+  width: 90px; /*여길 지우면 < >  가  > < 로 됨 > 의 위치가 이동함.*/
+  height: 100%;
+  color: #ffffff;
+  margin-right: 1rem;
 }
 
 .chitah-main-swiper-section .chitah-main-left-wrap {
@@ -139,15 +160,13 @@ body {
   z-index: 2;
 }
 
-.chitah-main-swiper-section .chitah-main-left-wrap .chitah-main-navi-wrap {
-  /*prev, next 역할을 하는 버튼 위치를 맞춰주는 css
-  */
+/* .chitah-main-swiper-section .chitah-main-left-wrap .chitah-main-navi-wrap {
   position: relative;
-  width: 90px; /*여길 지우면 < >  가  > < 로 됨 > 의 위치가 이동함.*/
+  width: 90px;
   height: 100%;
   color: #ffffff;
   margin-right: 1rem;
-}
+} */
 
 .chitah-main-swiper-section .chitah-main-left-wrap .chitah-main-swiper-button-prev {
   width: 40px;
@@ -166,7 +185,15 @@ body {
   color: #ffffff;
 }
 
-.chit-main-swiper-section .chit-main-left-wrap .chit-main-swiper-button-next i {
+.chitah-main-swiper-section .chiah-main-left-wrap .chitah-main-swiper-button-next i {
   font-size: 22px;
   padding-top: 6px;
+}
+
+.fa-solid {
+  font-weight: 900;
+}
+
+.chitah-main-swiper-section .chitah-main-left-wrap .chitah-main-pagi-wrap p {
+  color: #ffffff;
 }
