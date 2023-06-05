@@ -1,0 +1,15 @@
+.chitah-main-swiper-section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Pretendard-Regular', sans-serif;
+}
+.chitah-main-swiper-section .chitah-main-swiper-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.chitah-main-swiper-section .chitah-main-swiper {
+    width: 100%;
+    height: 100%;    
+}

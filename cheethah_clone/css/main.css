@@ -1,0 +1,172 @@
+/* 폰트 import */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* css 임포트 */
+  @import "./reset.css";
+  @import "./mainSwiper.css";
+  
+  
+/*23.06.05 - 현재 main.css 외의 파일을 읽지 못하는 import 오류로
+reset.css와 mainSwiper.css에 들어갈 내용 전체를 main.css에 옮겨두었음.
+차후 import 오류가 해결되면 이동이 필요함.*/ 
+
+/*rest.css*/ 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,p,address {
+  padding: 0;
+  margin: 0;
+}
+
+ul,li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden !important;
+}
+
+/* 모바일 PC 한쪽에서만 보일 요소 none 처리 */
+.mobile-only{
+  display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  .pc-only {
+      display: none !important;
+  }
+
+  .mobile-only {
+      display: block !important;
+  }
+}
+
+
+
+/*mainSwiper.css*/
+.chitah-main-swiper-section {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Pretendard-Regular', sans-serif;
+}
+.chitah-main-swiper-section .chitah-main-swiper-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.chitah-main-swiper-section .chitah-main-swiper {
+  width: 100%;
+  height: 100%;    
+}
+
+.chitah-main-swiper-section .chitah-main-swiper .chitah-main-swiper-img {
+  /*슬라이드에 삽입된 이미지 가로세로 비율 모두 100%로 맞춰주었음*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*이건 처음 본다.
+    img나 video 태그를 사용할 때 요소의 전체 콘텐츠 상자를 채우는 동안 종횡비를 유지하도록 크기가 조정됩니다.
+    개체의 가로 세로 비율이 해당 상자의 가로 세로 비율과 일치하지 않으면 개체가 잘립니다.
+  */
+  transform: translate(-50%, -50%);
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+.chitah-main-swiper-section .chitah-main-swiper .chitah-main-slide-text-wrap {
+  /*슬라이드 위로 text wrap을 넣어줌.
+  상하좌우 50%씩 설정하여 section내 정중앙에 위치하도록 한 것 같음.*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.chitah-main-swiper-section .chitah-main-swiper .chitah-main-slide-text {
+  font-size: 26px;
+  color: #ffffff;
+  text-align: center;
+  /* opacity: 0;
+  transform: translateY(100px); */
+  /* transition: 1s;
+  transition-delay: 0.8s; */
+  margin-bottom: 30px;
+}
+
+.chitah-main-swiper-section .chitah-main-swiper .chitah-main-slide-title {
+  font-size: 72px;
+  color: #ffffff;
+  text-align: center;
+  /* opacity: 0; */
+  /* transform: translateY(100px); */
+  /* transition: 1s;
+  transition-delay: 1s; */
+}
+
+.chitah-main-swiper-section .chitah-main-left-wrap {
+  position: absolute;
+  bottom: 5rem;
+  left: 5rem;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.chitah-main-swiper-section .chitah-main-left-wrap .chitah-main-navi-wrap {
+  /*prev, next 역할을 하는 버튼 위치를 맞춰주는 css
+  */
+  position: relative;
+  width: 90px; /*여길 지우면 < >  가  > < 로 됨 > 의 위치가 이동함.*/
+  height: 100%;
+  color: #ffffff;
+  margin-right: 1rem;
+}
+
+.chitah-main-swiper-section .chitah-main-left-wrap .chitah-main-swiper-button-prev {
+  width: 40px;
+  height: 100%;
+  color: #ffffff;
+}
+
+.chit-main-swiper-section .chit-main-left-wrap .chit-main-swiper-button-prev i {
+  font-size: 22px;
+  padding-top: 6px;
+}
+
+.chitah-main-swiper-section .chitah-main-left-wrap .chitah-main-swiper-button-next {
+  width: 40px;
+  height: 100%;
+  color: #ffffff;
+}
+
+.chit-main-swiper-section .chit-main-left-wrap .chit-main-swiper-button-next i {
+  font-size: 22px;
+  padding-top: 6px;
+}

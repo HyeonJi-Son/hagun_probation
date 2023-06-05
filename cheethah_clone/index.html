@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css"> <!-- main.css의 내용이 현재 페이지에 적용되도록 함. -->
+  <title>신규 틀</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- 원래 이 swiper bundle이 있으니까 npm install 받지 않아도 사용할 수 있어야 맞는 건가? -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/ScrollToPlugin.min.js"></script>
+</head>
+
+<body>
+  <section class="chitah-main-swiper-section">
+    <div class="chitah-main-swiper-container">
+      <div class="swiper chitah-main-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="chitah-main-swiper-cover"></div>
+              <!-- 기존 코드에는 여기에 swiper-slide-cover가 있는데 아직 왜 있는건지 잘 모르겠음. -->
+            <video class="chitah-main-swiper-img" src="./assets/images/chit-main-swiper-section/4.mp4" autoplay loop muted playsinline></video>
+            <!-- video 태그는 <video/> <-식으로는 사용할 수 없나...봐? 
+              그리고 기존에 사용되는 base_url 사용법은 해당 프로젝트 내에서 사용 중인 커스텀 function이기 때문에 여기선 일단 일반 url 삽입 방식 사용.
+            -->
+            <div class="chitah-main-slide-text-wrap">
+              <p class="chitah-main-slide-text">누구보다 빠른 해충방역 솔루션</p>
+              <img class="chitah-main-slide-logo" src="./assets/images/chit-main-swiper-section/logo.png" alt="치타"/>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="chitah-main-swiper-cover"></div>
+            <!-- 나는 왜 세 비디오 모두 autoplay를 넣어야지만 재생이 되는 걸까?-->
+            <video class="chitah-main-swiper-img" src="./assets/images/chit-main-swiper-section/2.mp4" loop muted playsinline></video>
+            <div class="chitah-main-slide-text-wrap">
+              <p class="chitah-main-slide-text">원인, 생태, 현장구조까지 파악한 완벽한 방역</p>
+              <h4 class="chitah-main-slide-title">전문집단이 움직이는 케어</h4>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="chitah-main-swiper-cover"></div>
+            <video class="chitah-main-swiper-img" src="./assets/images/chit-main-swiper-section/3.mp4" loop muted playsinline></video>
+            <div class="chitah-main-slide-text-wrap">
+              <p class="chitah-main-slide-text">재발 방지까지 완벽하게</p>
+              <h4 class="chitah-main-slide-title">빠른 주기의 사후케어 시스템</h4>
+            </div>
+          </div>
+          ...
+        </div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="chitah-main-left-wrap">
+          <div class="chitah-main-navi-wrap">
+            <div class="swiper-button-prev chitah-main-swiper-button-prev">
+              <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="swiper-button-next chitah-main-swiper-button-next">
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="chitah-main-pagi-wrap">
+          <p>
+            <span class="chitah-main-pagi">1</span>/3
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    AOS.init();
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollToPlugin);
+  </script>
+  <script src="./js/common.js"></script> <!-- common.js 의 스크립트 function이 현재 파일에서 적용되도록 한 부분. -->
+</body>
+
+</html>
