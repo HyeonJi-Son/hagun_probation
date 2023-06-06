@@ -95,6 +95,10 @@ body {
   z-index: 1;
   display: flex;
   transition-property: transform;
+  /* transition-property 정의는 transition 적용이 필요한 가장 상위 요소에 작성하나?
+  하위 요소의 transform에 작성된 내역이 적용되도록 한다는 뜻인가?
+  <!-- TODO: transition 작동에 대하여 공부하기 -->
+  */
   box-sizing: content-box;
 }
 
@@ -112,7 +116,7 @@ body {
   font-size: 26px;
   color: #ffffff;
   text-align: center;
-  /* opacity: 0;
+  /* opacity: 0; //이건 말 그대로 투명도겠지.
   transform: translateY(100px); */
   /* transition: 1s;
   transition-delay: 0.8s; */
