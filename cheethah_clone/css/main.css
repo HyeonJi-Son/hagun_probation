@@ -61,6 +61,8 @@ body {
 .chitah-main-swiper-section {
   width: 100%;
   height: 100vh;
+  /*css의 7가지 단위 참고: https://webclub.tistory.com/356
+  vh는 viewport height 즉 뷰포트의 기준으로 하는 길이 값이다. */
   overflow: hidden;
   font-family: 'Pretendard-Regular', sans-serif;
 }
@@ -86,6 +88,18 @@ body {
     개체의 가로 세로 비율이 해당 상자의 가로 세로 비율과 일치하지 않으면 개체가 잘립니다.
   */
   transform: translate(-50%, -50%);
+  /*이 transform이 빠지면 비디오 assets이 뷰포트 중앙에 위치하지 않음.*/
+}
+
+.chitah-main-swiper-section .chitah-main-swiper .chitah-main-swiper-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  /*알파 컬러값 추가로 모든 슬라이드 내용물이 원본 컬러보다 약간 어두워보이게 만들었음*/
+  z-index: 1;
 }
 
 .swiper-wrapper {
@@ -110,6 +124,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+  /*z-index 는 해당 속성을 가진 class보다 위 혹은 아래로 가도록 배정 가능.
+  한글 문서, 파워포인트 등 사용할 때 가장 위로/가장 아래로/글자 아래로 등 사용할 때를 생각해보자.
+  현재 text-wrap의 z-index는 2다. 즉 1인 cover class보다 아래있지만
+  그 외의 요소는 z-index가 2인 text-wrap, left-wrap보다 아래 있을 것이다.*/
 }
 
 .chitah-main-swiper-section .chitah-main-swiper .chitah-main-slide-text {
