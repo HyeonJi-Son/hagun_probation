@@ -108,9 +108,10 @@ body {
   height: 100%;
   z-index: 1;
   display: flex;
-  transition-property: transform;
+  /* transition-property: transform; */
   /* transition-property 정의는 transition 적용이 필요한 가장 상위 요소에 작성하나?
   하위 요소의 transform에 작성된 내역이 적용되도록 한다는 뜻인가?
+  - 심지어 현재 작업 내역에서는 transition-property 유무 차이가 없는 거 같아... 원본 sheet에도 없고.
   <!-- TODO: transition 작동에 대하여 공부하기 -->
   */
   box-sizing: content-box;
