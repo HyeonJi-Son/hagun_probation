@@ -1,0 +1,81 @@
+.first-section {
+    width: 100%;
+    height: 200vh;
+    position: relative;
+}
+.first-section .first-section-background {
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+}
+.first-section .first-section-background .first-section-background-image {
+    width: 50%;
+    height: 100%;
+}
+.first-section .first-section-background .first-section-background-image .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*비율을 유지하면서 부모 기준으로 꽉 채워주는 역할을 한다.*/
+}
+
+/**/
+
+.first-section .first-section-frontlayer {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*한 부모 내에서 문서상 위에 작성된 요소 보다 위로 띄움.*/
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-section .first-section-frontlayer .first-section-frontlayer-list {
+    width: 100%;
+    height:100vh;
+    flex-direction: row;
+    display: flex;
+}
+
+.first-section .first-section-frontlayer .first-section-frontlayer-list .first-section-frontlayer-visible {
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.first-section .first-section-frontlayer .first-section-frontlayer-list .first-section-frontlayer-invisible {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+.first-section .first-section-frontlayer .first-section-frontlayer-list .first-section-frontlayer-visible .for-margin {
+    margin: 100px;
+}
+
+.first-section .first-section-frontlayer .first-section-frontlayer-list .first-section-frontlayer-invisible .for-margin {
+    margin: 100px;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.first-section .first-section-frontlayer .first-section-frontlayer-list .first-section-frontlayer-invisible .six-box-margin {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-section .first-section-frontlayer .first-section-frontlayer-list .first-section-frontlayer-invisible .six-box-margin .broke {
+    width: 100%;
+}
