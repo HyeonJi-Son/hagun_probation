@@ -1,14 +1,13 @@
-.first-section {
-    width:100%;
+.first-section{
+    width: 100%;
     height: 200vh;
     position: relative;
-    top: 0;
 }
-.first-bg {
+.first-bg{
     width: 100%;
     height: 100vh;
     position: sticky;
-    top:  0;
+    top: 0;
     display: flex;
 }
 .bg-div{
@@ -20,47 +19,47 @@
     height: 100%;
 }
 
-.first-section .first-top {
+.first-section .first-top{
     width: 100%;
     height: 200vh;
     position: absolute;
-    top:0;
+    top: 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;;
 }
 .top-four{
     width: 50%;
-    height: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-end;
-    padding: 100px;
-}
-.top-black{
-    background-color: black;
-}
-.top-detail{
+    height: 100vh;
     color: white;
+    display: flex;
+    align-items: flex-end;
+    padding: 100px;
+    justify-content: center;
     text-align: center;
+    flex-wrap: wrap;
+}
+.bg-black{
+    background: black;
+}
+.top-img-div{
     width: 33.3%;
 }
-.img-detail{
-    width: 100%
+.top-img{
+    width: 100%;
 }
-.top-four .tandt{
-    height: 30%;
-    display: flex;
+
+.tandt{
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items: space-around;
 }
-.first-top-title{
+
+.first-top-title {
     color: hotpink;
     font-size: 70px;
     font-weight: bold;
 }
-.first-top-text{
+.first-top-text {
     color: white;
     font-size: 50px;
     font-weight: bold;

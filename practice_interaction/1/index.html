@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
+    <title>CSS + JS 인터렉션 연습</title>
+</head>
+
+<body>
+    <div style="width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center;">아래로 스크롤</div>
+
+    <section class="inter-prac-section">
+        <div class="box-wrap box-wrap1">
+            <p>클릭 active 클래스로 인터렉션 만들기</p>
+            <div class="box box1"></div>
+            <button class="trigger1">돌리기</button>
+        </div>
+
+        <div class="box-wrap box-wrap2">
+            <p>클릭 active 클래스로 인터렉션 만들기</p>
+            <div class="box box2"></div>
+            <button class="trigger2">돌리기 배경색 바꾸기</button>
+        </div>
+
+        <div class="box-wrap box-wrap3">
+            <p>클릭 active 클래스로 인터렉션 만들기</p>
+            <div class="box box3"></div>
+            <button class="trigger3">돌리기 배경색 토글</button>
+        </div>
+
+        <div class="box-wrap box-wrap4">
+            <p>클릭 active 클래스로 인터렉션 만들기</p>
+            <div class="box box4"></div>
+            <button class="trigger4">active 넣기</button>
+            <button class="trigger5">active 빼기</button>
+        </div>
+
+        <div class="box-wrap box-wrap5">
+            <p>호버 active 클래스로 인터렉션 만들기</p>
+            <div class="box box5"></div>
+        </div>
+
+        <div class="box-wrap box-wrap6">
+            <p style="margin: 0;">클릭 JS DOM style 인터렉션 만들기</p>
+            <p>태그에 인라인으로 css 속성이 들어간다</p>
+            <div class="box box6"></div>
+            <button class="trigger6">작동</button>
+            <button class="trigger7">초기화</button>
+        </div>
+
+        <div class="box-wrap box-wrap7">
+            <p style="margin: 0;">호버 JS DOM style 인터렉션 만들기</p>
+            <p>태그에 인라인으로 css 속성이 들어간다</p>
+            <div class="box box7"></div>
+        </div>
+
+        <div class="box-wrap box-wrap8">
+            <p>트랜지션엔드 동기(순서대로) 인터렉션 만들기</p>
+            <div class="box box8">
+                <div class="inner-box inner-box1"></div>
+            </div>
+            <button class="trigger8">작동</button>
+            <button class="trigger9">초기화</button>
+        </div>
+
+        <div class="box-wrap box-wrap9">
+            <p>querySelectorAll 배열 + 반복문 인터렉션 컨트롤</p>
+            <div class="inner-box inner-box2">
+                <button class="trigger10">작동</button>
+            </div>
+            <div class="inner-box inner-box2">
+                <button class="trigger10">작동</button>
+            </div>
+            <div class="inner-box inner-box2">
+                <button class="trigger10">작동</button>
+            </div>
+            <div class="inner-box inner-box2">
+                <button class="trigger10">작동</button>
+            </div>
+            <div class="inner-box inner-box2">
+                <button class="trigger10">작동</button>
+            </div>
+        </div>
+
+        <div class="box-wrap box-wrap10">
+            <p style="margin: 0;">querySelectorAll 배열 + 반복문 + 조건문 인터렉션 컨트롤</p>
+            <p>짝수 번째 inner-box 만 작동되도록</p>
+            <div class="inner-box inner-box3">
+                <button class="trigger11">작동</button>
+            </div>
+            <div class="inner-box inner-box3">
+                <button class="trigger11">작동</button>
+            </div>
+            <div class="inner-box inner-box3">
+                <button class="trigger11">작동</button>
+            </div>
+            <div class="inner-box inner-box3">
+                <button class="trigger11">작동</button>
+            </div>
+            <div class="inner-box inner-box3">
+                <button class="trigger11">작동</button>
+            </div>
+        </div>
+
+        <div class="box-wrap box-wrap11">
+            <p>부모 active 클래스 주고, 자식 요소 인터렉션 컨트롤</p>
+            <div class="box box9">
+                <div class="inner-box inner-box4">
+                    <span class="inner-span inner-span1">텍스트</span>
+                </div>
+            </div>
+            <button class="trigger12">작동</button>
+            <button class="trigger13">초기화</button>
+        </div>
+
+        <div class="box-wrap box-wrap12">
+            <p style="margin: 0;">부모 태그 CSS hover 시, 자식 요소 인터렉션 컨트롤</p>
+            <p>CSS만 사용한 인터렉션</p>
+            <div class="box box10">
+                <div class="inner-box inner-box5">
+                    <span class="inner-span inner-span2">텍스트</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div style="width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center;">위로 스크롤</div>
+
+
+    <script src="./js/common.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
