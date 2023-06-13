@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+div {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border : 1px solid #868686;
+  z-index: -1;
+}
+button {
+  margin-right: 30px;
+}
+.box1.active {
+  color: yellow;
+
+}
+.box2.active {
+  transform: rotate(90deg) translateY(-40px);
+}
+
+.box3.active {
+  transform: scale(2)
+
+}
+.box4.active {
+  transform: translateX(100px);
+
+}
+.box5.active {
+  transform: scale(2);
+
+}
+.box5.active.active2 {
+  color: red;
+}
