@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
+    <title>CSS + JS 인터렉션 연습</title>
+</head>
+
+<body>
+    <div style="width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center;">아래로 스크롤</div>
+
+    <section class="inter-prac-section">
+        <div class="box-wrap box-wrap1">
+            <p>클릭 active 클래스로 인터렉션 만들기</p>
+            <div class="box box1"></div>
+            <button class="trigger1">돌리기</button>
+        </div>
+
+        <div class="box-wrap box-wrap2">
+            <p>클릭 active 클래스로 인터렉션 만들기</p>
+            <div class="box box2"></div>
+            <button class="trigger2">돌리기 배경색 바꾸기</button>
+        </div>
+
+        <div class="box-wrap box-wrap3">
+            <p>클릭 active 클래스로 인터렉션 만들기</p>
+            <div class="box box3"></div>
+            <button class="trigger3">돌리기 배경색 토글</button>
+        </div>
+
+        <div class="box-wrap box-wrap4">
+            <p>클릭 active 클래스로 인터렉션 만들기</p>
+            <div class="box box4"></div>
+            <button class="trigger4">active 넣기</button>
+            <button class="trigger5">active 빼기</button>
+        </div>
+
+    <div style="width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center;">위로 스크롤</div>
+
+
+    <script src="./js/common.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

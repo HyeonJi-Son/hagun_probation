@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+div {
+  width: 300px;
+  height: 300px;
+  border : 1px solid #868686;
+}
+button {
+  margin-right: 30px;
+}
+
+
+/*box1*/
+.box1.active{
+  color: yellow;
+}
+
+/*box2*/
+.box2.active{
+  transform: rotate(90deg);
+}
+.box2-text.active{
+  transform: translateY(40px);
+  color: blue;
+}
+
+/*box3*/
+.box3.active{
+  transform: scale(2)  translateY(100px);
+}
+
+/*box4*/
+.box4.active{
+  transform: translate(100px, 0);
+}
+
+/*box5*/
+.box5.active1{
+  transform: translateX(600px) scale(2);
+}
+.box5.active2{
+  color: red;
+}
