@@ -135,9 +135,14 @@ trigger9.addEventListener("click", function() {
 // box-wrap9
 const innerBox2 = document.querySelectorAll('.inner-box2')
 const trigger10 = document.querySelectorAll('.trigger10')
+//querySelectorAll <- 값이 여러개면 NodeList에 저장하여 List형태로 보여준다.
 
 for(let i = 0; i < innerBox2.length; i++) {
+    //만약 i = 0이고, i의 값이 innerBox2의 길이보다 작을 때 반복되는 for문은
     trigger10[i].addEventListener("click", function() {
+    //trigger10 List의 i번째 태그에 클릭 이라는 이벤트가 발생했을때
+    //innerBox2의 i번째 인덱스가 가진 class목록에 active 라는 클래스를
+        //없으면 넣고, 있으면 빼는 함수를 실행한다.
         innerBox2[i].classList.toggle('active')
     })
 }
@@ -148,9 +153,13 @@ const innerBox3 = document.querySelectorAll('.inner-box3')
 const trigger11 = document.querySelectorAll('.trigger11')
 
 for(let i = 1; i <= innerBox3.length; i++) {
+//만약 i가 1이고, i의 값이 innerBox3의 길이보다 크거나 같을 때 반복되는 for문은
     if(i % 2 === 0){
+    //만약 i를 2로 나눈 값이 0과 같다면
         trigger11[i-1].addEventListener("click", function() {
+            //trigger11의 i-1번째 태그에 클릭 이벤트가 발생했을 때
             innerBox3[i-1].classList.toggle('active')
+            //innerBox3[i-1]번째 태그의 클래스 목록에 active클래스를 토글링 해준다.
         })
     }
 }

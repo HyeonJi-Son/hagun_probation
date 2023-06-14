@@ -1,0 +1,58 @@
+.first-section{
+    width: 100%;
+    height: 200vh;
+}
+.first-bg{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+.bg-div{
+    width: 50%;
+    height: 100%;
+}
+.bg-img{
+    width: 100%;
+    height: 100%;
+}
+
+.first-top{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.top-four{
+    width: 50%;
+    height: 50%;
+    color: white;
+    padding: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.bg-black{
+    background-color: black;
+}
+.top-detail{
+    width: 33.3%;
+}
+.top-img{
+    width: 100%;
+}
+.tandt{
+    display: flex;
+    flex-direction: column;
+}
+.top-title{
+    color: hotpink;
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 30%;
+}
+.top-text{
+    font-size: 50px;
+    font-weight: bold;
+}
