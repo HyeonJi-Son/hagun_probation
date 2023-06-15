@@ -164,6 +164,7 @@ for(let i = 1; i <= innerBox3.length; i++) {
     }
 }
 // box-wrap10
+box
 
 // box-wrap11
 const box9 = document.querySelector('.box9')

@@ -1,0 +1,80 @@
+.main-first-section{
+    width: 100%;
+    height: 100vh;
+}
+.swiper{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    /*overflow : 주어진 공간이 모자라 넘치는 컨텐츠를 제어할 때 유용하다.
+    visible, hidden, scroll, auto 에 대해 알아보기!
+    */
+}
+.slide-v{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*object-fit: img나 video같은 요소의 콘텐츠 크기를 어떤 방식으로 조절해
+    요소에 맞출 것인지 지정한다.
+    contain, fill, cover, none, scale-down 에 대해 알아보기!
+
+    상위 폴더 - width, height, overflow를 가짐
+    하위 폴더 - width, height, objec-fit을 가짐
+        - 이 구성으로 css를 삽입한다면 요소가 깨지는 문제를 해결하기에 용이하다.
+          단, 절대적인 것 해결책은 아니다!!
+    */
+}
+.text-wrap{
+    position: absolute;
+    top: 30%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: 0.8s;
+}
+
+.swiper-slide-active .text-wrap{
+    top: 20%;
+    opacity: 1;
+}
+
+.logo{
+    width: 60%;
+    margin-top: 8%;
+}
+
+.paging-wrap{
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    color: white;
+}
+.btn-wrap{
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after{
+    color: white;
+}
+
+.num-div{
+    width: 50%;
+}
