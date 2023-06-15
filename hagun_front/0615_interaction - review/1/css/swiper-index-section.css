@@ -1,0 +1,93 @@
+.inter-prac-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+.inter-prac-section .box-wrap {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.inter-prac-section .box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000000;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.inter-prac-section .inner-box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.inter-prac-section p {
+    margin-bottom: 20px;
+}
+.inter-prac-section .inner-span {
+    transition: 1s;
+}
+
+/* box-wrap1 */
+.inter-prac-section .box1.active {
+    transform: rotate(90deg);
+}
+
+
+/* box-wrap2 */
+.inter-prac-section .box2.active {
+    background-color: brown;
+    transform: rotate(90deg);
+}
+
+
+/* box-wrap3 */
+.inter-prac-section .box3.active {
+    background-color: darkgray;
+    transform: rotate(90deg);
+}
+
+/* box-wrap4 */
+.inter-prac-section .box4.active {
+    background-color: brown;
+    transform: scale(1.2);
+}
+
+/* box-wrap5 */
+.inter-prac-section .box5.active {
+    background-color: green;
+    transform: rotate(90deg);
+}
+
+/* box-wrap9 */
+.inter-prac-section .inner-box2.active {
+    background-color: pink;
+    transform: rotate(90deg);
+}
+
+/* box-wrap10 */
+.inter-prac-section .inner-box3.active {
+    background-color: blue;
+    transform: rotate(90deg);
+}
+
+/* box-wrap11 */
+.inter-prac-section .box9.active{
+    transform: scale(1.2);
+}
+.box9.active .inner-box4{
+    background-color: blueviolet;
+    color: wheat;
+}
+
+/* box-wrap12 */
+
