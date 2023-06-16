@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- S: swiper-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- E: swiper-->
+ 
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/smooth-scroll.js"></script>
+  <title>slide-fade/list test</title>
+</head>
+<body>
+<!--
+S : 헤더
+필요 요소 :
+  fixed(css) ,
+  gsap.create(javascript 스크롤 라이브러리),
+  DOM. querySelector
+  DOM. classList (add / remove)
+-->
+<header class="front-header">
+  <a href="#" class="logo">
+    <img src="assets/images/front-header/logo.png" alt="오토플렉스">
+    AUTOFLEX
+  </a>
+  <nav class="front-header-navigation">
+    <ul class="front-header-menu-list">
+      <li class="front-header-menu">제품소개</li>
+      <li class="front-header-menu">커뮤니티</li>
+      <li class="front-header-menu">판매처</li>
+      <li class="front-header-menu">정품등록</li>
+      <li class="front-header-menu">문의하</li>
+      <li class="front-header-menu">KR/EN</li>
+    </ul>
+  </nav>
+</header>
+<!-- E : 헤더 -->
+<!--
+S : 첫번째 섹션
+필요 요소 :
+    position(fixed 제외 모두),
+    sticky 겹침 요소
+    z-index,
+    flex 레이아웃
+-->
+
+<section class="front-first-section">
+  <div class="front-first-section-back">
+    <div class="front-first-back-box">
+      <div class="front-first-back-img-wrap">
+        <img class="front-first-section-img" src="assets/images/front-first-section/fea.png" alt="features">
+      </div>
+      <div class="front-first-back-img-wrap">
+        <img class="front-first-section-img" src="assets/images/front-first-section/spe.png" alt="features">
+      </div>
+    </div>
+    <div class="front-first-back-box">
+      <div class="front-first-back-img-wrap">
+        <img class="front-first-section-img" src="assets/images/front-first-section/spe.png" alt="features">
+      </div>
+      <div class="front-first-back-img-wrap">
+        <img class="front-first-section-img" src="assets/images/front-first-section/fea.png" alt="features">
+      </div>
+    </div>
+  </div>
+  <ul class="front-first-section-up">
+    <li class="front-first-up-content">
+      <div class="front-up-left-content">
+        <p class="front-up-text">마침내, 모두가 꿈꾸던<br>
+          샤프트를 공개합니다</p>
+      </div>
+      <div class="front-up-right-content">
+        <p class="front-up-text">(주)두미나의 독창적 기술<br>
+          No.1 프리미엄 샤프트</p>
+      </div>
+    </li>
+    <li class="front-first-up-content">
+      <div class="front-up-left-content">
+        <div class="left-content-flex-box">
+          <div class="left-content-flex-item">
+            <img src="assets/images/front-first-section/1.png" alt="temp">
+            <p>타사 대비 30g<br>
+              경량화</p>
+          </div>
+          <div class="left-content-flex-item">
+            <img src="assets/images/front-first-section/2.png" alt="temp">
+            <p>최적화 된<br>
+              에너지 전달력</p>
+          </div>
+          <div class="left-content-flex-item">
+            <img src="assets/images/front-first-section/3.png" alt="temp">
+            <p>유연한 밸런스로<br>
+              비거리 증가</p>
+          </div>
+          <div class="left-content-flex-item">
+            <img src="assets/images/front-first-section/4.png" alt="temp">
+            <p>
+              넓은 사용<br>
+              범용성
+            </p>
+          </div>
+          <div class="left-content-flex-item">
+            <img src="assets/images/front-first-section/5.png" alt="temp">
+            <p>
+              빠른 스윙 유도로<br>
+              정밀성 개선
+            </p>
+          </div>
+          <div class="left-content-flex-item">
+            <img src="assets/images/front-first-section/6.png" alt="temp">
+            <p>
+              입증된<br>
+              성능
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="front-up-right-content">
+        <p class="front-up-title">Fruitage</p>
+        <p class="front-up-text">(주)두미나의 독창적 기술<br>
+          No.1 프리미엄 샤프트</p>
+      </div>
+    </li>
+    <li class="front-first-up-content">
+      <div class="front-up-left-content">
+        <p class="front-up-text">마침내, 모두가 꿈꾸던<br>
+          샤프트를 공개합니다</p>
+      </div>
+      <div class="front-up-right-content">
+        <p class="front-up-text">(주)두미나의 독창적 기술<br>
+          No.1 프리미엄 샤프트</p>
+      </div>
+    </li>
+    <li class="front-first-up-content">
+      <div class="front-up-left-content">
+        <p class="front-up-text">마침내, 모두가 꿈꾸던<br>
+          샤프트를 공개합니다</p>
+      </div>
+      <div class="front-up-right-content">
+        <p class="front-up-text">(주)두미나의 독창적 기술<br>
+          No.1 프리미엄 샤프트</p>
+      </div>
+    </li>
+  </ul>
+</section>
+<!-- E : 첫번째 섹션-->
+<!--
+S : 두번째 섹션
+필요 요소 : swiper, swiper 컨트롤러 연동
+-->
+<!-- Slider main container -->
+<section class="front-second-section">
+  <div class="swiper fade-swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="fade-img-wrap">
+          <img src="./assets/images/front-second-section/1.png" alt="" class="fade-img">
+        </div>
+        <div class="fade-text-wrap"> 어쩌고 저쩌고 </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="fade-img-wrap">
+          <img src="./assets/images/front-second-section/2.png" alt="" class="fade-img">
+        </div>
+        <div class="fade-text-wrap"> 어쩌고 저쩌고 </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="fade-img-wrap">
+          <img src="./assets/images/front-second-section/3.jpg" alt="" class="fade-img">
+        </div>
+        <div class="fade-text-wrap"> 어쩌고 저쩌고 </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="fade-img-wrap">
+          <img src="./assets/images/front-second-section/4.jpg" alt="" class="fade-img">
+        </div>
+        <div class="fade-text-wrap"> 어쩌고 저쩌고 </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="fade-img-wrap">
+          <img src="./assets/images/front-second-section/1.png" alt="" class="fade-img">
+        </div>
+        <div class="fade-text-wrap"> 어쩌고 저쩌고 </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="fade-img-wrap">
+          <img src="./assets/images/front-second-section/2.png" alt="" class="fade-img">
+        </div>
+        <div class="text-wrap"> 어쩌고 저쩌고 </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="fade-img-wrap">
+          <img src="./assets/images/front-second-section/3.jpg" alt="" class="fade-img">
+        </div>
+        <div class="fade-text-wrap"> 어쩌고 저쩌고 </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="fade-img-wrap">
+          <img src="./assets/images/front-second-section/4.jpg" alt="" class="fade-img">
+        </div>
+        <div class="fade-text-wrap"> 어쩌고 저쩌고 </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="swiper list-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="list-img-wrap">
+          <img src="./assets/images/front-second-section/1.png" alt="" class="list-img">
+        </div>
+        <div class="list-text-wrap">어쩌고 저쩌고</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="list-img-wrap">
+          <img src="./assets/images/front-second-section/2.png" alt="" class="list-img">
+        </div>
+        <div class="list-text-wrap">어쩌고 저쩌고</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="list-img-wrap">
+          <img src="./assets/images/front-second-section/3.jpg" alt="" class="list-img">
+        </div>
+        <div class="list-text-wrap">어쩌고 저쩌고</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="list-img-wrap">
+          <img src="./assets/images/front-second-section/4.jpg" alt="" class="list-img">
+        </div>
+        <div class="list-text-wrap">어쩌고 저쩌고</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="list-img-wrap">
+          <img src="./assets/images/front-second-section/1.png" alt="" class="list-img">
+        </div>
+        <div class="list-text-wrap">어쩌고 저쩌고</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="list-img-wrap">
+          <img src="./assets/images/front-second-section/2.png" alt="" class="list-img">
+        </div>
+        <div class="list-text-wrap">어쩌고 저쩌고</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="list-img-wrap">
+          <img src="./assets/images/front-second-section/3.jpg" alt="" class="list-img">
+        </div>
+        <div class="list-text-wrap">어쩌고 저쩌고</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="list-img-wrap">
+          <img src="./assets/images/front-second-section/4.jpg" alt="" class="list-img">
+        </div>
+        <div class="list-text-wrap">어쩌고 저쩌고</div>
+      </div>
+    </div>
+
+    <div class="btn-wrap">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>  
+    </div>
+  </div>
+
+
+</section>
+<!-- E : 두번째 섹션-->
+
+<script src="js/main.js"></script>
+</body>
+</html>
