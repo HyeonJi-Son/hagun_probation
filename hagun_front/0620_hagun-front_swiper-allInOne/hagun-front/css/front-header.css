@@ -1,0 +1,39 @@
+.front-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  padding: 30px;
+  display: flex;
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  z-index: 99;
+  transition: 0.3s ease;
+  transform: translateY(0);
+}
+.front-header.moving {
+  transform: translateY(-100%);
+}
+.front-header .logo {
+  width: 120px;
+  height: 100%;
+  overflow: hidden;
+  font-size: 0;
+}
+.front-header .logo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left;
+}
+
+.front-header .front-header-navigation {
+  width: max-content;
+  margin-left: auto;
+}
+.front-header .front-header-navigation .front-header-menu-list {
+  display: flex;
+}
+.front-header .front-header-navigation .front-header-menu-list .front-header-menu {
+  margin-left: 30px;
+}

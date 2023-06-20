@@ -1,0 +1,36 @@
+.front-second-section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 30px;
+}
+.fade-swiper{
+  position: relative;
+  width: 100%;
+  height: 60%;
+}
+.fade-swiper .swiper-slide{
+  width: 100%;
+  height: 100%;
+}
+.fade-img{
+  width: 100%;
+}
+
+.list-swiper{
+  position: relative;
+  width: 100%;
+  height: 40%;
+  padding-top: 30px;
+}
+.list-swiper .swiper-slide-active{
+  border: 3px solid hotpink;
+}
+.list-img-wrap{
+  width: 100%;
+  height: 100%;
+}
+.list-img{
+  width: 100%;
+  height: 100%;
+}

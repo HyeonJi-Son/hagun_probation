@@ -1,0 +1,127 @@
+.front-four-section {
+  position: relative;
+  width: 100%;
+  height: 750vh;
+}
+.front-four-section .front-four-section-container {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/**
+S : 사진 커지기 전에 텍스틍 영역
+ */
+.front-four-section .front-four-section-container .four-section-text-wrap {
+  width: 100%;
+  height: 100%;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.front-four-section .front-four-section-container .four-section-text-wrap .four-section-title {
+  font-size: 14px;
+}
+.front-four-section .front-four-section-container .four-section-text-wrap .four-section-text {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 56px;
+  text-align: center;
+
+}
+.front-four-section .front-four-section-container .four-section-text-wrap .four-section-sub-text {
+  text-align: center;
+}
+/**
+E : 사진 커지기 전에 텍스틍 영역
+ */
+/**
+S : 사진 커지고 나서 메뉴 영역
+ */
+.front-four-section .front-four-section-container .four-section-menu-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 150px;
+  color: #fff;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transform : translateX(-10%);
+}
+.front-four-section .front-four-section-container .four-section-menu-wrap button {
+  margin: 0;
+  padding: 0;
+  color:#464646;
+  background-color: transparent;
+  border: none;
+}
+.front-four-section .front-four-section-container .four-section-menu-wrap button.active {
+  color: #fff;
+}
+.front-four-section .front-four-section-container .four-section-menu-wrap .four-section-menu-list {
+  display: flex;
+}
+.front-four-section .front-four-section-container .four-section-menu-wrap .four-section-menu {
+  margin-right: 20px;
+  margin-bottom: 100px;
+}
+
+.front-four-section .front-four-section-container .four-section-menu-wrap .four-section-menu:last-child {
+  margin-right: 0;
+}
+
+.front-four-section .front-four-section-container .four-section-menu-wrap .four-section-menu-title {
+  margin-bottom: 40px;
+  font-size: 56px;
+  line-height: 2;
+}
+
+/**
+E : 사진 커지고 나서 메뉴 영역
+ */
+.front-four-section .front-four-section-container .four-section-img-list {
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  transform: translateY(70%) scale(.7);
+  overflow: hidden;
+}
+.front-four-section .front-four-section-container .four-section-img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.front-four-section .front-four-section-container .four-section-img:nth-child(2) {
+  opacity: 0;
+  transform: translateX(100%);
+  z-index: 5;
+
+}
+.front-four-section .front-four-section-container .four-section-img:nth-child(3) {
+  opacity: 0;
+  transform: translateY(100%);
+  z-index: 6;
+
+}
+.front-four-section .front-four-section-container .four-section-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
