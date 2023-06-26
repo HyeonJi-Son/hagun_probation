@@ -1,0 +1,180 @@
+.chit-main-swiper-section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Pretendard-Regular', sans-serif;
+}
+.chit-main-swiper-section .chit-main-swiper-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.chit-main-swiper-section .chit-main-swiper {
+    width: 100%;
+    height: 100%;
+}
+.chit-main-swiper-section .chit-main-swiper .swiper-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.chit-main-swiper-section .chit-main-swiper .chit-main-swiper-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+.chit-main-swiper-section .chit-main-swiper .chit-main-swiper-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+.chit-main-swiper-section .chit-main-swiper .chit-main-slide-text-wrap {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.chit-main-swiper-section .chit-main-swiper .chit-main-slide-text {
+    font-size: 26px;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s;
+    transition-delay: 0.8s;
+    margin-bottom: 30px;
+}
+.chit-main-swiper-section .chit-main-swiper .chit-main-slide-title {
+    font-size: 72px;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s;
+    transition-delay: 1s;
+}
+.chit-main-swiper-section .chit-main-swiper .chit-main-slide-logo {
+    display: block;
+    width: 450px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1s;
+    transition-delay: 1s;
+    filter: invert(100%);
+}
+.chit-main-swiper-section .chit-main-swiper .swiper-slide-active .chit-main-slide-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+.chit-main-swiper-section .chit-main-swiper .swiper-slide-active .chit-main-slide-title {
+    opacity: 1;
+    transform: translateY(0);
+}
+.chit-main-swiper-section .chit-main-swiper .swiper-slide-active .chit-main-slide-logo {
+    opacity: 1;
+    transform: translateY(0);
+}
+.chit-main-swiper-section .chit-main-left-wrap {
+    position: absolute;
+    bottom: 5rem;
+    left: 5rem;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+.chit-main-swiper-section .chit-main-left-wrap .chit-main-navi-wrap {
+    position: relative;
+    width: 90px;
+    height: 100%;
+    color: #ffffff;
+    margin-right: 1rem;
+}
+.chit-main-swiper-section .chit-main-left-wrap .chit-main-swiper-prev {
+    width: 40px;
+    height: 100%;
+    color: #ffffff;
+}
+.chit-main-swiper-section .chit-main-left-wrap .chit-main-swiper-prev i {
+    font-size: 22px;
+    padding-top: 6px;
+}
+.chit-main-swiper-section .chit-main-left-wrap .chit-main-swiper-next {
+    width: 40px;
+    height: 100%;
+    color: #ffffff;
+}
+.chit-main-swiper-section .chit-main-left-wrap .chit-main-swiper-next i {
+    font-size: 22px;
+    padding-top: 6px;
+}
+.chit-main-swiper-section .chit-main-left-wrap .chit-main-swiper-prev::after {
+    content: "";
+}
+.chit-main-swiper-section .chit-main-left-wrap .chit-main-swiper-next::after {
+    content: "";
+}
+.chit-main-swiper-section .chit-main-left-wrap .chit-main-pagi-wrap p {
+    color: #ffffff;
+}
+
+/*NISSI제품문의*/
+.chit-main-swiper-section .pulse-aside-wrap {
+    position: fixed;
+    z-index: 1100;
+    bottom: 263px;
+    right: 257px;
+}
+
+
+.chit-main-swiper-section .pulse-aside-section {
+    position: absolute;
+    padding:30px;
+    border-radius: 50%;
+    background-color: rgba(29, 57, 94, 0.84);
+    box-shadow: 0 0 0 0 #1D395EFF;
+    overflow: hidden;
+    animation: pulse 2s infinite;
+    z-index: 900;
+}
+.chit-main-swiper-section .pulse-aside-section .pulse-link-btn {
+    display: flex;
+    justify-content: center;
+    width : 100px;
+    height : 100px;
+    align-items: center;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(29, 57, 94, 0.8);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(29, 57, 94, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(29, 57, 94, 0);
+    }
+}
+
+

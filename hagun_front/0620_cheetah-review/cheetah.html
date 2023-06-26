@@ -69,17 +69,22 @@
 <script src="./js/common.js"></script>
 <script>
     AOS.init();
-    gsap.to(".second-section-v", {
-        scrollTrigger: {
-            trigger: ".video-wrapper",
-            markers: true,
-            start: "20% center",
-            end: "70% center",
-            duration: 5,
-            scrub: true,
-            },
-        scale: 1
-    })
+
+    gsap.to(".second-section-v", { //내가 gsap로 애니메이션 주고자 하는 대상
+        scrollTrigger:{
+            trigger: ".video-wrapper", //여기에 기재한 요소에 뷰포트가 닿았을 때 이벤트 동작이 시작된다.
+                                        //무슨 이벤트? 내가 애니메이션 효과 주고자 하는 대상에게 변화가 일어남
+            start: "top 40%",
+            end: "70% 70%",
+            //좌측: 전체 height의 top, center, bottom
+            //우측, viewport상 top, center, bottom
+                // % 나 px도 쓸 수 있다.
+            scrub: 1, //스크럽을 부드럽게. 스크롤을 따라잡는데 1초가 걸린다?
+            markers: true, //화면의 표시선을 만들어준다. 실제 배포할 때 false값을 주었는지 잘 확인할 것.
+            duration: 2// 애니메이션이 총 여기에서 정한 시간동안 일어남.
+    
+        }, scale: 1 // 내가 하고자 하는 애니메이션 CSS를 이곳에 지정.
+    });
 </script>
 </body>
 

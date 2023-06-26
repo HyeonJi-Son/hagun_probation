@@ -1,0 +1,141 @@
+.anymb-product-scrollx {
+    position: relative;
+    width: 100%;
+    height:3000px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Pretendard-Regular';
+    letter-spacing: -0.5px;
+    transition: 1s;
+}
+
+
+.anymb-product-scrollx.active {
+
+    border-top: 0.5px solid #ffffffa4;
+
+}
+
+.anymb-product-scrollx .anymb-product-inner {
+    position:sticky;
+    width: 100%;
+    height:100vh;
+    top:0;
+    display: flex;
+
+}
+
+
+.anymb-product-scrollx .anymb-product-inner .anymb-product-item:nth-child(even) {
+    width:18%;
+}
+
+
+.anymb-product-scrollx .anymb-product-inner .anymb-product-item:nth-child(odd) {
+    width:54%;
+}
+
+
+.anymb-product-scrollx .anymb-product-inner .anymb-product-item:nth-child(1) {
+    width:28%;
+}
+
+/*.anymb-product-scrollx .anymb-product-inner:nth-child(2n-1) {*/
+/*    width:60%;*/
+/*}*/
+
+
+.anymb-product-scrollx .anymb-product-item {
+    flex-shrink: 0;
+    /*width:60%;*/
+    height: 100%;
+    display: flex;
+    align-items: end;
+    transition: 0.5s;
+    border-right: 0.1px solid #000;
+
+}
+
+.anymb-product-scrollx .anymb-product-item.active {
+
+    border-right: 0.1px solid #ffffffa4;
+
+}
+
+
+.anymb-product-scrollx .anymb-product-titlewrap {
+    transform: translateY(20%);
+    opacity: 0;
+    transition: 1s;
+
+}
+
+.anymb-product-scrollx .anymb-product-titlewrap.active {
+    transform: translateY(0);
+    opacity: 1;
+
+
+}
+
+
+.anymb-product-scrollx .anymb-product-title {
+    font-size: 3.5vw;
+    font-weight: bold;
+    padding: 120px 80px;
+
+}
+
+
+.anymb-product-scrollx .anymb-product-subtitlewrap {
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 120px 50px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.anymb-product-scrollx .subtitlewrap1.active {
+
+    opacity: 1;
+
+}
+
+.anymb-product-scrollx .subtitlewrap2.active {
+
+    opacity: 1;
+
+}
+
+
+.anymb-product-scrollx .anymb-product-subtitle {
+    font-size: 2.8vw;
+}
+
+
+.anymb-product-scrollx .anymb-product-subtext {
+    font-size: 18px;
+}
+
+.anymb-product-scrollx .anymb-product-imgwrap {
+    width:100%;
+    overflow: hidden;
+    height:100vh;
+}
+
+/*.anymb-product-scrollx .anymb-product-img {*/
+/*    height:100%;*/
+
+/*}*/
+
+.anymb-product-scrollx .anymb-product-vid {
+    width: 100%;
+    height: 100%;
+    transform: translateY(50px);
+
+}
+

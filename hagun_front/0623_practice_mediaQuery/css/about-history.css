@@ -1,0 +1,245 @@
+
+
+
+#page-about {
+    margin: 0 auto;
+    width: 100%;
+    /*height: 1500px;*/
+    position: relative;
+    z-index: 1;
+    background-color: #19191c;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding-top: 140px;
+    overflow: hidden;
+    font-family: "Pretendard-Regular", sans-serif;
+}
+
+
+.about-history-bgwrap {
+    position : absolute;
+    z-index: -1;
+    top:0;
+    width: 100%;
+    height: 100%;
+}
+.about-history-bgwrap-posi {
+     position : relative;
+     width: 100%;
+    height: 100%;
+}
+
+.about-history-bgimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.about-history-bgvid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.5);
+}
+
+
+.about-history .left-title{
+    position: absolute;
+    left: 304px;
+    height: 40%;
+    display: flex;
+    align-items: center;
+}
+.about-history-text {
+    font-size: 65px;
+    font-family: "Pretendard-Regular", sans-serif;
+    font-weight: 300;
+}
+
+
+.cnt-title {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-family: "Pretendard-Regular", sans-serif;
+    font-size: 48px;
+    line-height: 64px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    /*border-bottom: 1px solid #fff;*/
+}
+.cnt-title .about-logo-mo {
+    display: none;
+}
+
+.history-flex {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#page-about .about-background-img {
+    position: absolute;
+    bottom: -49px;
+    left: 0;
+    color: #fff;
+    font-size: 3rem;
+    overflow: hidden;
+    width: 100%;
+    height: 10rem;
+    filter: blur(10px);
+    background: #050054;
+    background: rgba(5, 0, 84, 0.8631827731);
+}
+#page-about .about-background-img img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+#page-about .about-text-cover {
+    position: relative;
+    margin-top: 0;
+    width: 50%;
+    height: 380px;
+    margin-bottom: 100px;
+}
+#page-about .about-text-cover .about-logo {
+    text-align: center;
+    position: absolute;
+    top: 13%;
+}
+#page-about .about-text-cover span {
+    font-size: 56px;
+    text-align: left;
+    line-height: 64px;
+    padding-left: 0;
+    font-weight: 700;
+    margin-bottom: 0px;
+    font-family: "Pretendard-Regular", noto Sans KR;
+    display: block;
+}
+#page-about .about-text-cover .about-text-mo {
+    display: none;
+}
+#page-about .about-text-cover .about-text-pc {
+    padding-left: 0px;
+    text-align: left;
+    font-size: 24px;
+    line-height: 30px;
+}
+#page-about .about-text-cover .about-text-pc .about-price {
+    font-size: 24px;
+    color: #F6B243;
+}
+#page-about .about-text-cover .about-text-pc .about-price-text {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #9D9D9D;
+}
+#page-about .page-about-container {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 300px;
+}
+#page-about .page-about-container .cnt-title {
+    font-family: "Pretendard-Regular";
+    font-size: 48px;
+    line-height: 64px;
+    color: #F4BE37;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 0rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+#page-about .page-about-container .cnt-title span {
+    display: inline-block;
+}
+#page-about .page-about-container .cnt-title span:after {
+    width: 100%;
+    height: 1px;
+    content: "";
+    background: #000;
+    display: block;
+    margin: 1.25rem auto 0 auto;
+}
+#page-about .page-about-container .history-list {
+    list-style: none;
+    position: relative;
+    padding: 78px 0 20px;
+    /*margin-left: 27px;*/
+}
+#page-about .page-about-container .history-list:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #e1e1e1;
+    z-index: -1;
+}
+#page-about .page-about-container .history-list dl {
+    padding: 0 10px 40px 42px;
+}
+#page-about .page-about-container .history-list dl dt {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    color: #fff;
+    font-size: 35px;
+    line-height: 22px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+#page-about .page-about-container .history-list dl dt:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 18px;
+    left: -41px;
+    width: 29px;
+    height: 1px;
+    background: #ccc;
+}
+#page-about .page-about-container .history-list dl dt:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: -44px;
+    width: 6px;
+    height: 6px;
+    background: #bbb;
+    border-radius: 100%;
+}
+#page-about .page-about-container .history-list dl dd {
+    position: relative;
+    margin-bottom: 8px;
+    padding-left: 30px;
+    font-size: 14px;
+    line-height: 160%;
+    font-weight: 400;
+    word-break: keep-all;
+}
+#page-about .page-about-container .history-list dl dd .date {
+    position: absolute;
+    left: 1px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
