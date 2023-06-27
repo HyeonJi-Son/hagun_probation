@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>날씨 API</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/main.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <h1>오늘의 강릉 날씨</h1>
+  <input id="city" type="text" value="">
+  <button onclick="getWeather()">날씨 가져오기</button>
+  <p id="temperature"></p>
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script>
+    function getWeather(){
+      let city = document.getElementById("city").value;
+
+      fetch('https://goweather.herokuapp.com/weather/' + city)
+    .then((response) => response.json())
+    .then((data) => {
+      document.getElementById("temperature").innerHTML = data['temperature'];
+    });
+    }
+  </script>
+
+  <form action="https://formspree.io/f/{form_id}" method="post">
+    <label for="email">Your Email</label>
+    <input name="Email" id="email" type="email">
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+
+
+</html>

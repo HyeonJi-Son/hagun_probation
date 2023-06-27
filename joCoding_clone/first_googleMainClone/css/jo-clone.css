@@ -1,0 +1,44 @@
+.clone-main-section{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo-wrap{
+    margin-bottom: 50px;
+}
+.logo-wrap > h1{
+    text-align: center;
+    margin-top: 232px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 105px;
+    text-align: center;
+    color: #3f7cff;
+}
+.search-wrap{
+    margin: 0 auto;
+}
+.main-search-input{
+    width: 600px;
+    height: 46px;
+    background-color: #fff;
+    border: 1px solid #c7c7c7;
+    border-radius: 24px;
+}
+.button-wrap{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.button-wrap > button{
+    width: 111px;
+    height: 36px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    margin: 5px;
+}
