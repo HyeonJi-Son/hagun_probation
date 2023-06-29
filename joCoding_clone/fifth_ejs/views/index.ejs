@@ -18,7 +18,20 @@
 
     <!-- form태그 활용 -->
     <h1>댓글 목록</h1>
-    <%= comments %>
+    <!-- <%= comments %> -->
+
+    <% for (comment of comments) { %>
+        <li> <%= comment.id %> <%= comment.content %></li>
+        <form action="/update/<%= comment.id %>" method="post">
+            <!-- /update api url로 보낼거야. 그 때 id값을 같이 보낼 거야. -->
+            <input type="text" id="lname" name="content"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <form action="/delete/<%= comment.id %>" method="post">
+            <!-- /delete api url로 보낼거야. 그 때 id값을 같이 보낼 거야. -->
+            <input type="submit" value="Submit">
+        </form>
+    <% } %>
     <hr>
     <form action="/create" method="post">
         <input type="text" id="lname" name="content"><br><br>
