@@ -1,0 +1,153 @@
+.shoebox-main-section{
+    width: 100%;
+    height: 120vh;
+    background-color: rgb(241, 241, 241);
+    font-family: 'Tenada';
+}
+
+/* top--------------------------------------------- */
+
+.shoebox-main-section .shoebox-main-top{
+    width: 100%;
+    height: 40%;
+    padding-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.shoebox-main-section .shoebox-top-title-wrap{
+    width: 100%;
+    font-size: 130px;
+    display: flex;
+    justify-content: center;
+}
+.shoebox-main-section .shoebox-top-title{
+    width: 30%;
+}
+.title-text{
+    width: 100%;
+    height: 100px;
+}
+.shoebox-main-section .shoebox-main-button-wrap{
+    width: 50%;
+    text-align: end;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+.shoebox-main-section .shoebox-top-text-wrap{
+    width: 80%;
+    margin-top: 40px;
+}
+/* swiper--------------------------------------------- */
+
+.shoebox-main-section .shoebox-swiper{
+    width: 100%;
+    height: 60%;
+    padding: 30px 30px 0px 30px;
+}
+.shoebox-swiper .swiper-slide{
+    width: 100%;
+    height: 91%;
+    /* background-color: rgb(65, 111, 126); */
+}
+.slide-name-wrap{
+    width: 80%;
+    margin-left: 10%;
+}
+.shoebox-swiper .slide-name {
+    width: 250px;
+    height: 45px;
+    padding: 10px 15px;
+    font-size: 20px;
+    border: solid 3px black;
+    border-radius: 30px;
+    display: flex;
+}
+.shoebox-swiper:hover .slide-name {
+    background-color: rgb(230, 1, 77);
+    color: white;
+    border: solid 3px transparent;
+    /* border: solid 3px black; */
+}
+.shoebox-swiper .slide-img-front{
+    width: 100%;
+    height: 80%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    /* border: solid 3px black; */
+}
+.shoebox-swiper:hover .slide-img-front{
+    transform: rotateY(90deg);
+    transition-duration: 0.5s;
+    overflow: hidden;
+}
+
+
+.shoebox-swiper .slide-img-front .border-front-div{
+    width: 80%;
+    height: 100%;
+    border: solid 4px black;
+    position: relative;
+
+}
+.shoebox-swiper .img-front-box{
+    width: 105%;
+    position: absolute;
+    top: 30%;
+    object-fit: cover;
+}
+
+.shoebox-swiper:hover .img-front-box{
+    width: 105%;
+    position: absolute;
+    top: 21%;
+    object-fit: cover;
+}
+
+/* --------------------------------- */
+
+.shoebox-swiper .slide-img-back{
+    width: 80%;
+    height: 80%;
+    margin-top: 21%;
+    margin-left: 10%;
+    padding: 10px 10px;
+    transform: rotateY(90deg);
+    position: absolute;
+    top:0;
+    z-index: -2;
+    background-color: black;
+    color: white;
+}
+.shoebox-swiper:hover .slide-img-back{
+    transform: rotateY(0deg);
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+}
+.slide-img-back .back-product-name-wrap{
+    width: 100%;
+    height: 15%;
+    padding: 10px 0px;
+}
+.slide-img-back .back-product-name{
+    font-size: 30px;
+}
+.slide-img-back .back-product-img-wrap{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+.slide-img-back .img-back{
+    width: 100%;
+    object-fit: cover;
+}
+.slide-img-back .back-product-text-wrap{
+    width: 100%;
+    height: 35%;
+    padding: 20px 0px;
+    font-family: 'Pretendard-Regular';
+    font-size: 15px;
+}

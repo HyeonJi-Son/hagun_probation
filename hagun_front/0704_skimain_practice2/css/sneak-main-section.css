@@ -1,0 +1,93 @@
+.sneak-main-section{
+    width: 100%;
+    height: 110vh;
+    position: relative;
+}
+.sneak-main-section .sneak-bg-wrapper{
+    width: 100%;
+    height: 850px;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+.sneak-bg-wrapper .bg-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*-----------------------------------*/
+.sneak-main-section .sneak-top-wrapper{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top:50%;
+
+    color: white;
+}
+.sneak-top-wrapper .top-text-wrapper{
+    width: 100%;
+    height: 30%;
+
+    display: flex;
+    justify-content: center;
+
+    background-image: linear-gradient(to top, white, transparent);
+
+    align-items: end;
+}
+.top-text-wrapper .top-text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*-----------------------------------*/
+.sneak-top-wrapper .sneak-top-swiper{
+    width: 100%;
+    height: 70%;
+    background-color: white;
+}
+.sneak-top-swiper .swiper-slide{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide .img-bgcolor-cover{
+    width: 100%;
+    height: 100%;
+    background-color: ghostwhite;
+    opacity: 0.6;
+    z-index: 1;
+
+    position: absolute;
+}
+.swiper-slide:hover .img-bgcolor-cover{
+    opacity: 0;
+}
+.sneak-top-swiper .swiper-text-wrapper{
+    position: absolute;
+}
+.sneak-top-swiper .sneak-swiper-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*-----------------------------------*/
+@media screen and (max-width:768px) {
+    .sneak-main-section .sneak-top-wrapper{
+        height: 100%;
+    }
+    
+    /*-----------------------------------*/
+
+    .sneak-top-swiper .swiper-slide{
+        width: 100%;
+        height: 100%;
+    }
+}

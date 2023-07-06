@@ -1,0 +1,71 @@
+void main() {
+  //List를 선언하는 방법은 2가지가 있다.
+  List redVelvetList = [];
+  print(redVelvetList);
+  
+  //List redVelvetList2 = new List();
+  //print(redVelvetList2);
+  /* 충격적 사건
+ 위의 new List로 출력하는 방식은 List 선언의 확인 대신
+Error: Couldn't find constructor 'List'.
+  List redVelvetList2 = new List();
+                            ^^^^
+Error: Compilation failed.
+  라는 에러가 확인 됨.
+  
+ 이유: Dart 언어의 버전이 2.1인 경우, new 키워드로 List를 사용하는 방법이 폐지됨.
+ 그리고 대안 방법인   List redVelvetList2 = List(); 이것도 같은 오류가 확인됨.
+ 권장되는 방법은 한가지만 남은 듯
+   * */
+
+  redVelvetList.add('아이린');
+  redVelvetList.add('슬기'); 
+  redVelvetList.add('조이');
+  
+  print('-----------------');
+  print(redVelvetList);
+  
+  redVelvetList.removeAt(1); //1번 인덱스의 값을 지운다.
+  
+  print(redVelvetList);
+  print(redVelvetList[0]);//0번 인덱스의 값을 print한다.
+  
+  redVelvetList[0] = '예리';
+  print(redVelvetList[0]);
+  print(redVelvetList);
+
+  print('-----------------');
+
+  List<String> redVelvetList3 = [];
+  
+  redVelvetList3.add('아이린');
+  print(redVelvetList3);
+
+  //redVelvetList3.add(1);
+  /* 위의 코드는 String이 아닌 int형이기 때문에 오류가 발생한다.
+Error: The argument type 'int' can't be assigned to the parameter type 'String'.
+  redVelvetList3.add(1);
+                     ^
+Error: Compilation failed.
+   * */
+  print(redVelvetList3);
+  
+  
+  print('-----------------');
+  
+  /*
+  위의 예제들 처럼 리스트의 사이즈가
+  자유롭게 늘어나거나 줄어드는 List는 growable list라고 부른다.
+  
+  List<String> bts= new List(3);
+  print(btsList)
+  
+  이렇게 인덱스 갯수가 한정된 List는...아무튼 new를 못쓰게 되어서 사라진 방법임.
+   */
+  
+  List<String> bts = ['RM', 'Jin', 'Suga']; // 인덱스 갯수가 3개로 한정된 리스트 생성
+  //이건 값을 넣은 채로 선언하는 방법
+  
+  print(bts);
+  
+}

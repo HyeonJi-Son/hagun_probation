@@ -1,0 +1,75 @@
+void main(){ //main 함수
+  dynamic name = '코드팩토리';
+  var numberVar = 2;
+  //변수 var
+  //var는 어떤 타입이든 넣을 수 있음. string도 정수도
+  
+  int number1 = 12; //정수 integer
+  int number2 = 38;
+  
+  print(name);
+  print(numberVar);
+  print(number1);
+  print(number2);
+  
+  print(number1 + number2);
+  
+  name = '나는 다이나믹';
+  //다이나믹 함수는 재할당 가능. var는 재할당이 안됨.
+  //dynamic 타입은 잘 사용하지 않음.
+  //미치겠다 그냥 var도 안쓰면 안되나 js때문에 편견 온다.
+  print(name);
+  
+  var nothing;
+  //var 타입을 처음 선언할 때 어떤 자료형을 넣을지
+  //지정하지 않은 경우 자료형을 변경하면 재할당 가능.
+  
+  print(nothing);
+  
+  nothing = 'nothing에 스트링 넣었지롱';
+  print(nothing);
+  
+  nothing = 1;
+  print(nothing);
+    
+  print('----------------------');
+  
+  double number3 = 2.5; //실수 double
+  double number4 = 0.5;
+  
+  print(number3);
+  print(number4);
+  
+  print(number3 - number4);
+  
+  print('----------------------');
+  
+  String name1 = '아이린';
+  String name2 = "슬기";
+  String sentence1 = "는 레드벨벳 멤버입니다.";
+  //String 변수 선언은 꼭 대문자로 선언함.
+  
+  print(name1);
+  print(name2 + sentence1);
+  //다른 연산자 -, *, / 는 안되지만 +는 가능
+  //+ 를 사용해 두 문자열을 합칠 수 있음
+  print('$name1$sentence1');
+  //문자열을 작성하는 따옴표 안에 $표시를 넣었을 때
+  //$ 바로 다음에 오는 문자는 value를 그대로 인식한다.
+  
+  int count = 5;  
+  String sentence2 = "레드벨벳 멤버는 $count명 입니다.";
+  print(sentence2);
+  
+  print('----------------------');
+  
+  bool isTrue = true;
+  bool isFalse = false;
+
+  print(isTrue);
+  print(isFalse);
+  
+  print('----------------------');
+  
+}
+

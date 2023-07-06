@@ -1,0 +1,97 @@
+void main() {
+Map dictionary = {
+ 'apple' : '사과', 
+  'banana' : '바나나',
+  'watermelon' : '수박',
+};  
+  print(dictionary);
+  print(dictionary['apple']);
+  print(dictionary['banana']);
+
+  Map dictionary2 = {};
+  
+  print('---------------------');
+  print(dictionary2);
+  
+  dictionary2.addAll({
+   'apple' : '사과', 
+   'banana' : '바나나',
+   'watermelon' : '수박',    
+  });
+  
+  print(dictionary2);
+  
+  dictionary2.remove('apple');
+  print(dictionary2);
+  
+  dictionary2['banana'] = '코드팩토리';
+  print(dictionary2);
+  
+  print(dictionary2.keys.toList());
+  print(dictionary2.values.toList());
+  
+  print('---------------------');
+  
+  //Map dictionary3 = new Map();
+  //Map dictionary3 = new Map({});
+  //new 키워드를 쓰는 이 녀석들도 폐지되었단다.
+  
+  Map<String, int> price = {
+   'apple' : 2000, 
+   'banana' : 4000,
+   'watermelon' : 6000,
+  };
+  print(price);
+  
+  //Map은 똑같은 key를 여러개 가질 수 없다.
+  price.addAll({
+    'apple': 3000
+  });
+  print(price);
+  //apple의 가격이 덮어쓰기 된 것을 확인할 수 있다.
+}
+
+
+--------------------------------------------------------------------------
+
+void main() {
+/*변수 선언에 대한 몇가지 약속 */
+
+//1. 타입이 같던 다르던 변수 이름이 중복되게 선언할 수 없다
+  String name = '코드팩토리';
+  String name = '레드벨벳'; //name이란 String변수를 중복 선언 불가
+
+
+//2. 변수 이름을 지을 때는 띄어쓰기를 하지 않는다.
+  //String red velvet = '레드벨벳'(x)
+  String redVelvet = '레드벨벳';//카멜케이스
+  
+  String _name = '조이'//언더스코어가 있는 name과 그냥 name은 다른 변수
+    
+//3. 소문자와 대문자는 다른 변수로 인식.
+    String Name = '슬기'
+    //하지만 보통 클래스를 선언할 때 대문자로 입력하는 편이다.
+    //개발자의 암묵적 규칙이지만 따르지 않으면
+    //협업에 문제가 생길 수 있으니 가능한 지키도록 하자.
+
+    
+/*final과 const의 차이*/
+  fianl String nameF = '코드팩토리';
+  nameF = '레드벨벳'
+    
+  const String nameC = '코팩';
+  nameC = '레드벨벳'
+    
+  /*final과 const는 모두 값을 재할당할 수 없는 타입이기 때문에
+    위의 코드는 모두 오류가 일어난다. 그렇다면 둘은 무슨 차이가 있을까?
+    
+    final
+    - 런타임에 값이 지정되어 있어야 함.
+    
+    
+    
+    const
+    - compile 타임에 값이 지정되어 있어야 함.
+    - compile이란? 사람이 읽기 편한 코드가 컴퓨터가 읽기 편한 코드로 변하는 과정.
+  */  
+}
