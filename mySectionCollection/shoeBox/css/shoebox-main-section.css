@@ -65,7 +65,7 @@
     border-radius: 30px;
     display: flex;
 }
-.shoebox-swiper:hover .slide-name {
+.shoebox-swiper .slide-name.active {
     background-color: rgb(230, 1, 77);
     color: white;
     border: solid 3px transparent;
@@ -79,7 +79,7 @@
     justify-content: center;
     /* border: solid 3px black; */
 }
-.shoebox-swiper:hover .slide-img-front{
+.shoebox-swiper .slide-img-front.active{
     transform: rotateY(90deg);
     transition-duration: 0.5s;
     overflow: hidden;
@@ -100,7 +100,7 @@
     object-fit: cover;
 }
 
-.shoebox-swiper:hover .img-front-box{
+.shoebox-swiper .img-front-box.active{
     width: 105%;
     position: absolute;
     top: 21%;
@@ -122,7 +122,7 @@
     background-color: black;
     color: white;
 }
-.shoebox-swiper:hover .slide-img-back{
+.shoebox-swiper .slide-img-back.active{
     transform: rotateY(0deg);
     transition-delay: 0.5s;
     transition-duration: 1s;
