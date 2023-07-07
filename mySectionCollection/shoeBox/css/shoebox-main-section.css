@@ -80,7 +80,7 @@
     /* border: solid 3px black; */
 }
 .shoebox-swiper .slide-img-front.active{
-    transform: rotateY(90deg);
+    /* transform: rotateY(90deg); */
     transition-duration: 0.5s;
     overflow: hidden;
 }

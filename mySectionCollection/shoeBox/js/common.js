@@ -50,6 +50,10 @@ for(let i = 0; i < boxSlides.length; i++){
       //if active class does not exist, add it
       names[i].classList.add("active");
       imgFronts[i].classList.add("active");
+
+      imgFronts[i].style.transform = "rotateY(90deg)"
+      
+
       imgFrontBoxs[i].classList.add("active");
 
       imgFronts[i].addEventListener("transitionend", function(){
