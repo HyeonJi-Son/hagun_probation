@@ -69,7 +69,6 @@
     background-color: rgb(230, 1, 77);
     color: white;
     border: solid 3px transparent;
-    /* border: solid 3px black; */
 }
 .shoebox-swiper .slide-img-front{
     width: 100%;
@@ -77,7 +76,6 @@
     margin-top: 10%;
     display: flex;
     justify-content: center;
-    /* border: solid 3px black; */
 }
 .shoebox-swiper .slide-img-front.active{
     /* transform: rotateY(90deg); */
@@ -123,8 +121,8 @@
     color: white;
 }
 .shoebox-swiper .slide-img-back.active{
-    transform: rotateY(0deg);
-    transition-delay: 0.5s;
+    /* transform: rotateY(0deg);
+    transition-delay: 0.5s; */
     transition-duration: 1s;
 }
 .slide-img-back .back-product-name-wrap{

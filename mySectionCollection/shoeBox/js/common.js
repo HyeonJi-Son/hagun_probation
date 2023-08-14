@@ -48,17 +48,19 @@ for(let i = 0; i < boxSlides.length; i++){
       }, {once: true});
     } else {
       //if active class does not exist, add it
-      names[i].classList.add("active");
+      names[i].classList.add("active"); //1. slide-name-warp.active : 컬러 변경
+
       imgFronts[i].classList.add("active");
-
       imgFronts[i].style.transform = "rotateY(90deg)"
-      
-
-      imgFrontBoxs[i].classList.add("active");
-
       imgFronts[i].addEventListener("transitionend", function(){
         imgBacks[i].classList.add("active");
+        imgBacks[i].style.transform = "rotateY(0deg)"
       }, {once: true});
+      
+
+      // imgFronts[i].addEventListener("transitionend", function(){
+      //   imgBacks[i].classList.add("active");
+      // }, {once: true});
     }
   });
 }

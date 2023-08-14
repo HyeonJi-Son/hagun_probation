@@ -1,0 +1,257 @@
+class Player {
+  //Class 내에서 property를 선언할 때는 타입을 사용하여 정의
+  //function내에서 variable을 사용할 때는 var를 사용하면 된다.(타입을 명시할 필요 x)
+  // 하지만 Class에서 변수 property를 생성할 때는 반드시 타입을 선언해주어야 한다.
+  //만약 내가 class 내의 값을 변경하지 못하게 하고 싶다면 final 붙여 상수로 만들어주면 된다.
+  
+  final String name;
+  int xp, age; //타입이 같은 변수들을 선언하는 방법.
+  //타입이 통일되기 때문에 경우에 따라 적절히 사용해야 한다.
+    //예를 들어 현재 name만 final타입이기 때문에 따로 선언한 것 처럼.
+  String team;
+  
+  
+  //생성자 함수 만드는 법
+    //생성자 함수의 이름은 클래스의 이름과 같아야 한다.
+    //class는 받아올 값이 없다면 (fianl) 오류가 난다.
+      //값을 선언할 때 late를 붙여주면 변수들의 값을 나중에 받아올 거라는 의미.
+      //하지만 late사용은 필수적인 것이 아니다. 두 번째 방식으로 작성한 생성자 함수 참고
+//1.  
+//   Player(String name, int xp){
+  //이미 String, int 타입인 걸 알고 있는데 반복적으로 작성된 부분이 있음.
+//     this.name = name;
+//     this.xp = xp;
+
+//2.
+    //Player(this.name, this.xp, this.team, this.age);
+      //사용자가 보낸 첫 번째 argument는 this.name이 될거야.
+      //우리가 이미 상단에 타입을 작성하였기 때문에, 다트 언어는 this.name과 xp의 타입을 알고 있다.
+
+//3.
+    Player({required this.name, required this.xp, required this.team, required this.age});
+    //객체 안의 내용이 this.name, this.xp, this.team, this.age 상태일 때 발생하는 에러 해결법
+    //에러 내용: this.변수 의 값이 null일 수도 있다.
+      //1. 기본값을 주기.
+      //2. required 사용
+        //required는 클래스의 생성자 매개변수를 필수적으로 요구하는 역할을 한다.
+  
+  // : 콜론을 사용하여 생성자 초기화하기
+  Player.createBluePlayer({required String name, required int age}) : // Player 클래스 초기화 
+  this.age = age,
+  this.name = name,
+  this.team = 'blue',
+  this.xp = 0;
+  
+  Player.createRedPlayer(String name, int age) : // Player 클래스 초기화 
+  this.age = age,
+  this.name = name,
+  this.team = 'red',
+  this.xp = 0;
+  
+  void sayHello(){
+    //void 란? return하는 값이 없다는 뜻이다.
+    print("Hi my name is $name");
+  }
+}
+
+// void main(){ //main 함수
+// //   var player1 = Player("nico", 1500, 'red', 12); //positional
+// //   player1.sayHello();
+// //   var player2 = Player("lynn", 2500, 'blue', 12);
+// //   player2.sayHello();
+  
+//   var player3 = Player(
+//   name: "nico",
+//     xp: 1200,
+//     team: 'blue',
+//     age: 21,
+//   );
+  
+// //   print(player.name);
+// //    player.name = 'lallala';
+// //   print(player.name);
+  
+  
+// }
+
+void main(){
+  var playerBlue = Player.createBluePlayer(
+  name : "nico",
+    age: 21,
+  );
+  
+  var playerRed = Player.createRedPlayer("nico", 21);
+}
+
+---------------------------------------------------------------
+
+class Player {
+  final String name;
+  int xp;
+  String team;
+  
+  Player.fromJson(Map<String, dynamic> playerJson) :
+   name = playerJson['name'],
+   xp = playerJson['xp'],
+   team = playerJson['team'];
+    
+  void sayHello(){
+    print("Hi my name is $name");
+  }
+}
+
+void main(){
+  var apiData = [
+    {
+      "name" : "nico",
+      "team" : "red",
+      "xp" : 0,
+    },
+    {
+      "name" : "lynn",
+      "team" : "red",
+      "xp" : 0,
+    },
+    {
+      "name" : "dal",
+      "team" : "red",
+      "xp" : 0,
+    }
+  ];
+  
+  apiData.forEach((playerJson){
+    var player = Player.fromJson(playerJson);
+    player.sayHello();
+  });
+}
+
+---------------------------------------------------------------------------------------------
+
+abstract class Human {
+  void walk();
+}
+
+enum Team { red, blue } //선택의 폭을 좁혀준다.
+enum XPLevel { begginer, middle, pro }
+
+//syntax sugar
+//cascade operator
+class Player extends Human {
+  String name;
+  XPLevel xp;
+  Team team;
+  
+ 
+  Player({required this.name, required this.xp, required this.team});
+  
+  void walk(){  print('Im walking');}
+  
+  void sayHello(){
+    print("Hi my name is $name");
+  }
+}
+
+class Coach extends Human{
+  void walk(){
+    print("Im training Coach")
+  }
+}
+
+void main(){
+  var nico = Player(name: 'name', xp: XPLevel.middle, team: Team.red);
+  var potato = nico
+    ..name = 'las'
+    ..xp = XPLevel.pro
+    ..team = Team.blue    
+    ..sayHello();
+}
+
+//추상화 클래스(Abstract Casses)란 다른 클래스들이 직접 구현해야하는 메소드들을 모아 놓은 일종의 청사진
+  //특정 메소드를 구현하도록 강제한다.(상속받은 class가 어떤 메서드를 갖고 있는지 확신할 수 있음.)
+  //Flutter  사용시 사용도 자체는 낮은 편
+
+
+------------------------------------------------------------------------------------------------
+
+//상속
+
+class Human {
+  final String name;
+  Human({required this.name});
+  void sayHello() {
+    print("Hi my name is $name");
+  }
+}
+
+enum Team { red, blue }
+
+class Player extends Human {
+  final Team team;
+
+  //named argument
+  Player({required this.team, required String name}) : super(name: name);
+
+  @override
+  void sayHello() {
+    super.sayHello();
+    print('and I play for ${team}');
+  }
+}
+
+void main() {
+  var player = Player(team: Team.red, name: "nico");
+  player.sayHello(); //오늘 계속 마지막에 메서드 호출하는 걸 까먹네...
+}
+
+---------------------------------------------------------------------------------------
+
+//Mixins : 생성자가 없는 함수. 클래스에 프로퍼티들을 추가하거나 할 때 사용.
+
+mixin Strong {
+  final double strenghtLevel = 1500.99;
+}
+mixin QuickRunner {
+  void runQuick() {
+    print("ruuuuuuun!"); 
+  }
+}
+
+mixin Tall {
+  final double height = 1.99;
+}
+ 
+
+enum Team { red, blue }
+
+class Player with Strong, QuickRunner, Tall { // 다른 클래스의 프로퍼티와 메소드를 긁어다 옴.
+  final Team team;
+  Player({required this.team}); //매개변수 추가 까먹음
+}
+
+class Horse with Strong, QuickRunner {}
+
+class Kid with QuickRunner {}
+ 
+  
+void main() {
+  var player = Player(
+    team: Team.red,
+  );
+  
+  player.runQuick();
+}
+
+/* Mixins 와 extends의 차이점
+ * extends는 상속(is-a 관계를 나타내는 경우에 사용)
+ * 자식 클래스는 부모 클래스의 멤버를 사용/확장이 가능. super를 통해 접근
+ * 단일 상속만 지원하므로 하나의 클래스가 여러 개의 클래스를 동시에 상속받을 수 없음.
+ 
+ 
+ * with 키워드를 사용하여 클래스에 mixins를 추가 (has-a 과계)
+ * 코드 재사용에 용이하지만 상속 형태 접근과 다름.
+ * 그냥 with 키워드로 연결한 클래스의 메서드나 변수를 뺏어오는 거라고 생각해야 함.
+ *  
+  
+ * */
+
+//계속 생성자랑 메서드 실행을 까먹는 실수가 있었네...조심하자
