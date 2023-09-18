@@ -1,0 +1,431 @@
+.new-vertical-swiper-section{
+    background-color: black;
+    color: white;
+    position: relative;
+    height: 1200vh;
+}
+.new-vertical-swiper-section .new-vertical-swiper-wrap{
+    position: relative;
+    height: 1200vh;
+}
+.new-vertical-swiper-section .new-vertical-one-swiper{
+    width: 100%;
+    height: 300vh;
+
+    display: flex;
+}
+.new-vertical-swiper-section .new-vertical-one-swiper .new-vertical-one-left{
+    position: sticky;
+    top:0;
+    width: 50%;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 120px;
+}
+.new-vertical-swiper-section .new-vertical-one-swiper .new-vertical-left-top-text,
+.new-vertical-swiper-section .new-vertical-one-swiper .new-vertical-left-top-text{
+    padding: 50px 0px;
+    line-height: 160%;
+}
+.new-vertical-swiper-section .new-vertical-one-swiper .new-vertical-one-right{
+    position: sticky;
+    top:0;
+    width: 50%;
+    height: 100vh;
+    
+    display: flex;
+    overflow: hidden;
+}
+.new-vertical-swiper-section .new-vertical-one-swiper .new-vertical-gradient-wrap{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+.new-vertical-swiper-section .new-vertical-one-swiper .new-vertical-gradient-top{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 200px;
+    top:0;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+}
+.new-vertical-swiper-section .new-vertical-one-swiper .new-vertical-gradient-bottom{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+}
+.new-vertical-swiper-section .new-vertical-one-swiper .new-vertical-pic-first-box{
+    margin-right: 50px;
+    overflow: hidden;
+    height: 300vh;
+}
+.new-vertical-swiper-section .new-vertical-one-swiper .new-vertical-pic-sec-box{
+    margin-top: -150vh;
+    overflow: hidden;
+    height: 300vh;
+}   
+.new-vertical-swiper-section .new-vertical-one-swiper .new-vertical-pic-box{
+    width: 320px;
+    height: 500px;
+    margin-bottom: 50px;
+}
+.new-vertical-swiper-section .new-vertical-one-swiper .new-vertical-pic{
+    width: 320px;
+    height: 500px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+
+/* 두번째 */
+.new-vertical-swiper-section .new-vertical-two-swiper{
+    width: 100%;
+    height: 300vh;
+
+    display: flex;
+}
+.new-vertical-swiper-section .new-vertical-two-swiper .new-vertical-one-left{
+    position: sticky;
+    top:0;
+    width: 50%;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+}
+.new-vertical-swiper-section .new-vertical-two-swiper .new-vertical-left-top-text,
+.new-vertical-swiper-section .new-vertical-two-swiper .new-vertical-left-top-text{
+    padding: 50px 0px;
+    line-height: 160%;
+}
+.new-vertical-swiper-section .new-vertical-two-swiper .new-vertical-one-right{
+    position: sticky;
+    top:0;
+    width: 50%;
+    height: 100vh;
+    
+    display: flex;
+    overflow: hidden;
+}
+.new-vertical-swiper-section .new-vertical-two-swiper .new-vertical-gradient-wrap{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+.new-vertical-swiper-section .new-vertical-two-swiper .new-vertical-gradient-top{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 200px;
+    top:0;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+}
+.new-vertical-swiper-section .new-vertical-two-swiper .new-vertical-gradient-bottom{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+}
+.new-vertical-swiper-section .new-vertical-two-swiper .new-vertical-pic-first-box{
+    margin-right: 50px;
+    overflow: hidden;
+    height: 300vh;
+}
+.new-vertical-swiper-section .new-vertical-two-swiper .new-vertical-pic-sec-box{
+    margin-top: -150vh;
+    overflow: hidden;
+    height: 300vh;
+}   
+.new-vertical-swiper-section .new-vertical-two-swiper .new-vertical-pic-box{
+    width: 320px;
+    height: 500px;
+    margin-bottom: 50px;
+}
+.new-vertical-swiper-section .new-vertical-two-swiper .new-vertical-pic{
+    width: 320px;
+    height: 500px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* three */
+.new-vertical-swiper-section .new-vertical-three-swiper{
+    width: 100%;
+    height: 300vh;
+
+    display: flex;
+}
+.new-vertical-swiper-section .new-vertical-three-swiper .new-vertical-one-left{
+    position: sticky;
+    top:0;
+    width: 50%;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+}
+.new-vertical-swiper-section .new-vertical-three-swiper .new-vertical-left-top-text,
+.new-vertical-swiper-section .new-vertical-three-swiper .new-vertical-left-top-text{
+    padding: 50px 0px;
+    line-height: 160%;
+}
+.new-vertical-swiper-section .new-vertical-three-swiper .new-vertical-one-right{
+    position: sticky;
+    top:0;
+    width: 50%;
+    height: 100vh;
+    
+    display: flex;
+    overflow: hidden;
+}
+.new-vertical-swiper-section .new-vertical-three-swiper .new-vertical-gradient-wrap{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+.new-vertical-swiper-section .new-vertical-three-swiper .new-vertical-gradient-top{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 200px;
+    top:0;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+}
+.new-vertical-swiper-section .new-vertical-three-swiper .new-vertical-gradient-bottom{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+}
+.new-vertical-swiper-section .new-vertical-three-swiper .new-vertical-pic-first-box{
+    margin-right: 50px;
+    overflow: hidden;
+    height: 300vh;
+}
+.new-vertical-swiper-section .new-vertical-three-swiper .new-vertical-pic-sec-box{
+    margin-top: -150vh;
+    overflow: hidden;
+    height: 300vh;
+}   
+.new-vertical-swiper-section .new-vertical-three-swiper .new-vertical-pic-box{
+    width: 320px;
+    height: 500px;
+    margin-bottom: 50px;
+}
+.new-vertical-swiper-section .new-vertical-three-swiper .new-vertical-pic{
+    width: 320px;
+    height: 500px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* four */
+.new-vertical-swiper-section .new-vertical-four-swiper{
+    width: 100%;
+    height: 300vh;
+
+    display: flex;
+}
+.new-vertical-swiper-section .new-vertical-four-swiper .new-vertical-one-left{
+    position: sticky;
+    top:0;
+    width: 50%;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+}
+.new-vertical-swiper-section .new-vertical-four-swiper .new-vertical-left-top-text,
+.new-vertical-swiper-section .new-vertical-four-swiper .new-vertical-left-top-text{
+    padding: 50px 0px;
+    line-height: 160%;
+}
+.new-vertical-swiper-section .new-vertical-four-swiper .new-vertical-one-right{
+    position: sticky;
+    top:0;
+    width: 50%;
+    height: 100vh;
+    
+    display: flex;
+    overflow: hidden;
+}
+.new-vertical-swiper-section .new-vertical-four-swiper .new-vertical-gradient-wrap{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+.new-vertical-swiper-section .new-vertical-four-swiper .new-vertical-gradient-top{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 200px;
+    top:0;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+}
+.new-vertical-swiper-section .new-vertical-four-swiper .new-vertical-gradient-bottom{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+}
+.new-vertical-swiper-section .new-vertical-four-swiper .new-vertical-pic-first-box{
+    margin-right: 50px;
+    overflow: hidden;
+    height: 300vh;
+}
+.new-vertical-swiper-section .new-vertical-four-swiper .new-vertical-pic-sec-box{
+    margin-top: -150vh;
+    overflow: hidden;
+    height: 300vh;
+}   
+.new-vertical-swiper-section .new-vertical-four-swiper .new-vertical-pic-box{
+    width: 320px;
+    height: 500px;
+    margin-bottom: 50px;
+}
+.new-vertical-swiper-section .new-vertical-four-swiper .new-vertical-pic{
+    width: 320px;
+    height: 500px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.new-vertical-swiper-section .new-vertical-skew-wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 800px;
+}
+.new-vertical-swiper-section .new-vertical-skew-phone{
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    border:1px solid white;
+    border-radius: 10px;
+    -webkit-transform: rotate3d(2, -2, 1, 25deg); 
+    transform: rotate3d(2, -2, 1, 25deg);
+    overflow: hidden; 
+}
+.new-vertical-swiper-section .new-vertical-skew-top-div{
+    height: 60%;
+}
+.new-vertical-swiper-section .new-vertical-skew-bottom-div{
+    height: 40%;
+    position: relative;
+}
+.new-vertical-swiper-section .new-vertical-skew-bottom-title-wrap{
+    color: black;
+    padding: 15px;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    overflow: hidden;
+    font-weight: bold;
+}
+.new-vertical-swiper-section .new-vertical-skew-bottom-img-wrap{
+    width: 300px;
+    overflow: hidden;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+.new-vertical-swiper-section .new-vertical-skew-bottom-img{
+    object-fit: contain;
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* 텍스트 감싸는부분 */
+.new-vertical-swiper-section .new-vertical-text-swiper-wrap{
+    position: absolute;
+    top:0;
+    z-index: 20;
+    width: 100%;
+    height: 1200vh;
+}
+.new-vertical-swiper-section .new-vertical-text-swiper{
+    position: sticky;
+    top:30px;
+    width: 100%;
+    height: 100vh;
+}
+.new-vertical-swiper-section .new-vertical-text-wrap-top{
+    width: 1200px;
+    height: 200px;
+    overflow: hidden;
+    padding-left: 100px;
+}
+.new-vertical-swiper-section .new-vertical-text-swiper .new-vertical-text-top-title{
+    font-size: 150px;
+    font-family: 'EB Garamond', serif;
+    position: relative;
+}
+.new-vertical-swiper-section .new-vertical-text-wrap-bottom{
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    width: 250px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    text-align: center;
+}
+.new-vertical-swiper-section .new-vertical-text-index-wrap{
+    overflow: hidden;
+    width: 25px;
+    height: 25px;
+    line-height: 160%;
+}
+.new-vertical-text-total{
+    width: 25px;
+    height: 25px;
+    line-height: 160%;
+}
+.new-vertical-swiper-section .new-vertical-var-wrap{
+    position: relative;
+}
+.new-vertical-swiper-section .new-vertical-var-wrap .new-vertical-var-bg{
+    width: 150px;
+    height: 2px;
+    background-color: rgb(71, 71, 71);
+    position: relative;
+}
+.new-vertical-swiper-section .new-vertical-var-wrap .new-vertical-var-white{
+    width: 0px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top:0;
+}

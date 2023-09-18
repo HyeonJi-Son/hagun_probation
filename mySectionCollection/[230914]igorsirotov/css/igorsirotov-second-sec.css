@@ -1,0 +1,105 @@
+/* sticky + gsap 들어가는 부분 시작*/
+.igorsirotov-second-sec {
+    position: relative;
+    height: 370vh; /* 전체 길이 */
+    background-color: #0e0e0e;
+}
+.igorsirotov-second-sec .igorsirotov-photo-info {
+    position: sticky;
+    top:0;
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(6%);
+      }
+      100% {
+       transform: translateY(0);
+      }
+}
+
+.igorsirotov-second-sec .ig-photo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.igorsirotov-second-sec .ig-photo-img1 {
+    animation: moveUp 1s 2s forwards;
+    transform: translateY(6%);
+}
+/* sticky + gsap 들어가는 부분 끝*/
+
+
+
+.igorsirotov-second-sec .igorsirotov-photo-info.info-blank {
+    height: 110vh; /* 마지막 div는 크게*/
+    background-color: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+}
+.igorsirotov-second-sec .ig-info-text-wrap {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    color: rgba(255, 255, 255, 0.3);
+}
+.igorsirotov-second-sec .ig-info-text-wrap:hover {
+    color: rgba(255, 255, 255, 1.0);
+}
+.igorsirotov-second-sec .ig-second-text-first {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+}
+.igorsirotov-second-sec .ig-second-text-first::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #151515;
+    /* display: block; */
+    z-index: 1;
+}
+.igorsirotov-second-sec .ig-second-text-first.active::after {
+    animation: afterAni 2s ease forwards;
+}
+@keyframes afterAni {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+     transform: translateX(100%);
+    }
+ }
+
+.igorsirotov-second-sec .ig-second-text-second {
+    position: absolute;
+    left: 1700px;
+    top: 15px;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: end;
+}
+
+.igorsirotov-second-sec  .igorsirotov-photo-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.igorsirotov-second-sec .ig-photo-text {
+    z-index: 1;
+    position: absolute;
+    color: white;
+    font-size: 47px;
+    font-weight: 100;
+}

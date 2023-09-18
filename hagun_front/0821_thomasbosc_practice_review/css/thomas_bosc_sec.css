@@ -1,0 +1,122 @@
+.thomas-bocs-sec {
+    width: 100%;
+    height: 400vh;
+    position: relative;
+}
+.thomas-bocs-sec .thomas-bocs-bg-wrap {
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top:0;
+    z-index: -99;
+    overflow: hidden;
+}
+.thomas-bocs-sec .thomas-bocs-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*-----------------------*/
+.thomas-bocs-sec .thomas-bocs-main-wrap {
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    top: 0;
+
+    padding: 0px 100px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.thomas-bocs-scroll-main {
+    width: 100%;
+    height: 100vh;
+    color: azure;
+    position: relative;
+
+    display: flex;
+}
+.thomas-bocs-text-wrap {
+    width: 50%;
+    height: 100%;
+}
+.thomas-bocs-text-p {
+    width: 100%;
+    height: auto;
+
+    position: sticky;
+    top: 50%;
+}
+.thomas-bocs-text-span {
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+}
+.thomas-bocs-img-wrap {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+.img-wrap-right {
+    width: 50%;
+    height: 100%;
+        
+    transform: translateY(-110%);
+}
+.img-wrap-left {
+    width: 50%;
+    height: 100%;
+}
+.thomas-img-cards {
+    width: 300px;
+    height: 400px;
+
+    margin-top: 30px;
+
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.thomas-bocs-top-wrap {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    z-index: 999;
+
+}
+.thomas-bocs-title-wrap {
+    width: 100%;
+    height: 200px;
+
+    position: sticky;
+    top: 50px;
+}
+.title-total-wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.thomas-bocs-title {
+    width: 100%;
+    font-size: 150px;
+    position: relative;
+    color:aliceblue;
+}
+.thomas-bocs-progress-wrap {
+    width: 200px;
+    height: 200px;
+
+    position: sticky;
+    top: 850px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    color:aliceblue;
+
+}

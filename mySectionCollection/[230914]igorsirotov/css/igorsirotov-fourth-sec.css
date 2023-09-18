@@ -1,0 +1,179 @@
+.igorsirotov-fourth-sec{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    padding: 28px 27px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    /* justify-content: center; */
+}
+.igorsirotov-fourth-sec .igorsirotov-fourth-top {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 450px;
+
+    color: white;
+}
+.igorsirotov-fourth-sec .top-mail-p {
+    transition: color 0.5s;
+}
+.igorsirotov-fourth-sec .top-phone-wrap{
+    display: flex;
+}
+.igorsirotov-fourth-sec .phone-info-p {
+    margin-left: 70px;
+    transition: color 0.5s;
+}
+.igorsirotov-fourth-sec .phone-owner {
+    color: #353535;
+}
+
+  /* --------------------------------------------------------------------- */
+
+  .igorsirotov-fourth-sec .igorsirotov-fourth-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+}
+.igorsirotov-fourth-sec .center-text-first {
+    position: relative;
+    overflow: hidden;
+
+    width: 300px;
+    height: 100px;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    padding: 170px 10px 65px;
+
+    transition: color 0.5s;
+}
+.igorsirotov-fourth-sec .center-text-first::before {
+    content: "";
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.igorsirotov-fourth-sec .center-text-first::after {
+    content: attr(data-text);
+    background-color: #000;
+    position: absolute;
+    top:72.5%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 100;
+    z-index: 1;
+}
+
+.igorsirotov-fourth-sec .center-text-first::before {
+    animation: afterAni 1s forwards;
+}
+.igorsirotov-fourth-sec .center-text-first::after {
+    animation: afterAni 1s 1s forwards;
+}
+
+@keyframes afterAni {
+    0% {
+      transform: translateX(0);
+      color: rgba(255, 255, 255, 1);
+    }
+    100% {
+     transform: translateX(100%);
+     color: rgba(255, 255, 255, 0.5);
+    }
+ }
+
+.igorsirotov-fourth-sec .center-text-second {
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+    color: rgba( 255, 255, 255, 0.1);
+    transition: color 0.5s;
+}
+
+  /* --------------------------------------------------------------------- */
+
+.igorsirotov-fourth-sec .igorsirotov-fourth-bottom {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: end;
+}
+.igorsirotov-fourth-sec .bottom-text-wrap {
+    width: 35%;
+}
+.igorsirotov-fourth-sec .bottom-sns-wrap {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    margin-left: 170px;
+}
+.igorsirotov-fourth-sec .bottom-first-p {
+    color: rgba( 255, 255, 255, 0.3);
+    transition: color 0.5s;
+}
+.igorsirotov-fourth-sec .bottom-first-span {
+    margin-right: 20px;
+    color: rgba( 255, 255, 255, 0.1);
+}
+.igorsirotov-fourth-sec .sns-btn-div {
+    width: 55px;
+    height: 67%;
+    border-radius: 50%;
+    background-color: rgb(14, 14, 14);
+    margin-left: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: ; */
+}
+.igorsirotov-fourth-sec .sns-icon-btn {
+    color: #fff;
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* 마우스 오버 시에 적용될 스타일 */
+.igorsirotov-fourth-sec .top-mail-p.mouserhover-one,
+.igorsirotov-fourth-sec .phone-info-p.mouserhover-one,
+.igorsirotov-fourth-sec .center-text-first.mouserhover-one {
+    color: rgba(255, 255, 255, 0.3);
+}
+.igorsirotov-fourth-sec .center-text-second.mouserhover-two,
+.igorsirotov-fourth-sec .bottom-first-p.mouserhover-two {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+/* 마우스 오버 시에 적용될 스타일 */
+.igorsirotov-fourth-sec .sns-btn-div:hover {
+    background-color: #fff; /* 백그라운드 색상 변경 */
+    transition: background-color 0.5s; /* 백그라운드 색상 변경에 0.3초 동안의 트랜지션을 적용 */
+}
+
+/* 아이콘 색상 변경 */
+.igorsirotov-fourth-sec .sns-btn-div:hover .sns-icon-btn {
+    color: #000; /* 아이콘 색상 변경 */
+    transition: color 0.5s; /* 아이콘 색상 변경에 0.3초 동안의 트랜지션을 적용 */
+}

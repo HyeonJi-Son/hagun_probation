@@ -1,0 +1,235 @@
+.abetkaua-card-sec {
+    width: 100%;
+    /* height: auto; */
+    padding: 0px 20px;
+    background-color: black;
+}
+.abetkaua-card-sec .card-sec-title-wrap {
+    width: 100%;
+    height: 300px;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.abetkaua-card-sec .card-sec-title {
+    position: relative;
+    color: rgb(240, 240, 240);
+    font-size: 280px;
+    margin: 40px 0px;
+}
+
+.abetkaua-card-sec .abetkaua-cart-wrap-total {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.abetkaua-card-sec .card-wrapper {
+    width: 440px;
+    aspect-ratio: 1/1.4;
+    margin: 15px 0px;
+
+    perspective: 2500px; /* perspective 속성을 설정합니다. */
+    position: relative;
+}
+.abetkaua-card-sec .abetkaua-card-frame {
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    background-color: rgb(240, 240, 240);
+
+    transform-style: preserve-3d; /* 3D 공간을 유지합니다. */
+    transition: transform 0.8s; /* 뒤집는 애니메이션을 부드럽게 합니다. */
+}
+.abetkaua-card-sec .card-front-top-text {
+    width: 100%;
+    font-size: 20px;
+    border-top: 1px solid black;
+    padding-top: 5px;
+}
+.abetkaua-card-sec .card-front-middle {
+    width: 100%;
+    /* margin-top: 0px; */
+}
+.abetkaua-card-sec .card-front-big-title {
+    width: 100%;
+    font-size: 150px;
+    font-weight: bold;
+}
+.abetkaua-card-sec .card-front-text {
+    width: 100%;
+    font-size: 20px;
+    border-top: 1px solid rgb(175, 175, 175);
+    padding-top: 5px;
+}
+.abetkaua-card-sec .card-front-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.abetkaua-card-sec .card-wrap-bottom-text {
+    font-size: 20px;
+    font-weight: 600;
+}
+.abetkaua-card-sec .card-wrap-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #000;
+    color: white;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.abetkaua-card-sec .card-front-bottom {
+    display: flex;
+}
+
+.abetkaua-card-sec .abetkaua-card-frame.abetkaua-card-front {
+    backface-visibility: hidden;
+}
+/* ------------------------------------------- */
+.abetkaua-card-sec .abetkaua-card-frame.abetkaua-card-back {
+    display: block;
+    background-color: #d6c148;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform: rotateY(-180deg);
+    width: 100%; /* 부모 요소와 동일한 너비 */
+    height: 100%; /* 부모 요소와 동일한 높이 */
+}
+.abetkaua-card-sec .card-wrapper:hover .abetkaua-card-frame {
+    transform: rotateY(180deg);
+    transition: transform 0.5s; /* 뒤집는 애니메이션을 부드럽게 합니다. */
+}
+.abetkaua-card-sec .card-wrapper:hover .abetkaua-card-back {
+    transform: rotateY(0deg);
+}
+
+.abetkaua-card-sec .card-back-top {
+    width: 37%;
+    height: 200px;
+    background-color: #ffffff;
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    overflow: hidden;
+}
+.abetkaua-card-sec .top-canvas-text-wrap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.abetkaua-card-sec .top-canvas-img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+}
+
+.abetkaua-card-sec .card-back-middle {
+    width: 100%;
+    /* margin-top: 100px; */
+}
+/* 텍스트 슬라이드 시작 */
+.abetkaua-card-sec .cover-sldie-back-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+}
+.abetkaua-card-sec .cover-sldie-back-text-wrap {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: flex;
+    white-space: nowrap;
+    transform: translateY(-50%);
+}
+.abetkaua-card-sec .cover-sldie-back-text {
+    font-size: 120px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+}
+/* 텍스트 슬라이드 끝 */
+.abetkaua-card-sec .card-back-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    position: relative;
+    top: 320px;
+}
+.abetkaua-card-sec .card-wrap-bottom-text.card-back-text {
+    color: white;
+}
+.abetkaua-card-sec .card-wrap-circle.card-back-circle {
+    background-color: white;
+    color: #d6c148;
+}
+
+/* ------------------------------------------- */
+
+@media screen and (max-width:768px) {
+    .abetkaua-card-sec .card-sec-title {
+        font-size: 100px;
+    }
+    .abetkaua-card-sec .card-wrapper {
+        aspect-ratio: 1/1.15;
+        margin: 10px 0px;
+    }
+    .abetkaua-card-sec .abetkaua-card-frame {
+        padding: 20px;
+    }
+    .abetkaua-card-sec .card-front-top-text {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .abetkaua-card-sec .card-front-big-title {
+        font-size: 110px;
+        font-weight: bold;
+    }
+    .abetkaua-card-sec .card-front-text {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .abetkaua-card-sec .card-wrap-circle {
+        width: 25px;
+        height: 25px;
+    }
+    .abetkaua-card-sec .card-back-top {
+        width: 40%;
+        height: 150px;
+    }
+    .abetkaua-card-sec .top-canvas-text-wrap {
+        font-size: 14px;
+        font-weight: bolder;
+    }
+    .abetkaua-card-sec .cover-sldie-back-text {
+        font-size: 90px;
+    }
+    .abetkaua-card-sec .card-back-bottom {
+        top: 170px;
+    }
+    .abetkaua-card-sec .card-wrap-bottom-text {
+        font-size: 16px;
+    }
+}

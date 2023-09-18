@@ -1,0 +1,180 @@
+.thomas-bosc-sec {
+    width: 100%;
+    height: 405vh;
+    position: relative;
+    /* background-color: black; */
+}
+.thomas-bg-wrap {
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: -99;
+    overflow: hidden;
+}
+.thomas-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thomas-bosc-main-wrap {
+    width: 100%;
+    height: 400vh;
+    position: absolute;
+    top:0;
+    padding: 30px 100px;
+}
+/* .thomas-bosc-main {
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+} */
+.thomas-main-title-wrap {
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    padding: 00px 100px;
+    height: auto;
+    
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    overflow: hidden;
+}
+.main-title-p-wrap {
+    width: 100%;
+    height: 130px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.thomas-main-title {
+    width: 100%;
+    height: 100px;
+    /* background-color: aqua; */
+    font-size: 100px;
+    font-weight: bold;
+    color: gainsboro;
+    margin-top: 40px;
+    /* display: flex; */
+    /* justify-content: start;
+    align-items: center; */
+
+
+
+
+    /* display: none; */
+}
+/* .thomas-main-title.active {
+    display: block;
+} */
+
+.thomas-bosc-scroll-wrap {
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(156, 179, 171, 0.3); */
+    position: relative;
+    /* top:0; */
+
+    display: flex;
+}
+.thomas-bosc-text-wrap{
+    /* background-color: rgba(156, 179, 171, 0.3); */
+    width: 50%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: gainsboro;
+    font-size: 20px;
+}
+.bosc-text-first {
+    margin-top: 500px;
+    position: sticky;
+    top: 400px;
+}
+
+.thomas-bosc-imgs-wrap {
+    /* background-color: rgba(179, 156, 168, 0.3); */
+    width: 40%;
+    height: 100vh;
+    
+    position: sticky;
+    /* top: 350px; */
+    right: 100px;
+    display: flex;
+    justify-content:end;
+
+    overflow: hidden;
+}
+.imgs-right {
+    width: 400px;
+    height: 2500px;
+    /* background-color: rgba(179, 156, 168, 0.3); */
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* overflow: hidden; */
+}
+.imgs-left {
+    width: 400px;
+    height: 2500px;
+
+    /* display: flex; */
+    /* align-items: center;
+    flex-direction: column; */
+    
+    transform: translateY(-60%);
+    padding-top: 30px;
+}
+.thomas-bosc-img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.thomas-bocs-gage-wrap {
+    /* background-color: rgba(138, 163, 190, 0.3); */
+    width: 350px;
+    height: 50px;
+    
+    position: fixed;
+    top:90%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    color: gainsboro;
+    font-size: 20px;
+}
+.gage-bar-wrap {
+    width: 250px;
+}
+.gage-thin {
+    width: 250px;
+    height: 2px;
+    background-color: rgba(220, 220, 220, 0.4);
+    display: flex;
+
+    position: absolute;
+    top:45%;
+}
+.gage-thick {
+    width: 00px;
+    height: 5px;
+    background-color: rgb(220, 220, 220);
+    display: flex;
+
+    position: absolute;
+    top:42%;
+}
